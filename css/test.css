@@ -1,0 +1,9 @@
+table,tr,td {
+    border-bottom:1px solid #999;
+    width:400px;
+    padding:5px;  /*cellpadding*/
+    border-collapse:collapse;
+}
+tr:nth-child(even) {
+    background: pink;
+}

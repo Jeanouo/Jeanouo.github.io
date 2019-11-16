@@ -1,0 +1,165 @@
+.welcomeBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-circle {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    transition: all 1s;
+    position: relative;
+}
+
+.welcome-circle::before, .welcome-circle::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; 
+}
+
+.welcome-circle::before {
+    animation-name: bdr1;
+}
+
+@keyframes bdr1 {
+    0% {        
+        width: 100%;
+        height: 100%;
+    }
+    50% {        
+        width: 170%;
+        height: 170%;
+        border: 1px solid #d4d4d4;
+    }
+    100% {        
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.welcome-circle::after {
+    animation-name: bdr2;
+}
+
+@keyframes bdr2 {
+    
+    0% {        
+        width: 155%;
+        height: 155%;
+        border: 1px solid #e2e2e2;
+    }
+    50% {        
+        width: 110%;
+        height: 110%;
+    }
+    100% {        
+        width: 155%;
+        height: 155%;
+        border: 1px solid #e2e2e2;
+    }
+}
+
+.welcomeBTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    color: #aaa;
+    text-decoration: none;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: all 1s;
+    position: relative;
+}
+
+
+.welcomeBTN::before, .welcomeBTN::after {    
+    content: '';
+    width: 101%;
+    height: 101%;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; 
+}
+
+.welcomeBTN::before {
+    animation-name: bdr3;
+    animation-delay: 0.2s;
+}
+
+@keyframes bdr3 {
+    0% {        
+        width: 100%;
+        height: 100%;
+    }
+    50% {        
+        width: 155%;
+        height: 155%;
+        border: 1px solid #e2e2e2;
+    }
+    100% {        
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.welcomeBTN::after {
+    animation-name: bdr4;
+}
+
+@keyframes bdr4 {
+    0% {        
+        width: 50%;
+        height: 50%;
+    }
+    50% {        
+        width: 100%;
+        height: 100%;
+    }
+    100% {        
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.welcomeBTN:hover {
+    color: #fff;
+    border: 75px solid rgb(204, 30, 82);
+}
+
+.welcome-absolute {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 80px;
+    z-index: 1;
+}
+
+.welcome-absolute p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+}
+
+.welcome-absolute h4 {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 30px;
+}
