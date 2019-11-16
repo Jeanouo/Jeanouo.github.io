@@ -7,3 +7,21 @@ table,tr,td {
 tr:nth-child(even) {
     background: pink;
 }
+
+.btn-forwelconme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    background: #468;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+.btn-forwelconme:hover {
+    background: rgb(129, 31, 138);
+}
