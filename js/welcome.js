@@ -10,13 +10,6 @@ $('.welcomeBTN').mouseout(function(){
     $('.welcome-absolute h4').text('JCDS').css({'font-size':'24px','padding-bottom':'none','border-bottom':'none'});
 });
 
-// $('.welcomeBTN').click(function(){
-//     $('.welcomeBg-pink').addClass('pink-cover');
-//     window.setTimeout(function(){
-//         $('.welcomeBg').fadeOut();
-//     }, 1500);
-// });
-
 function enterJCDS() {
     $('.welcomeBg-pink').addClass('pink-cover');
     setTimeout(function(){
@@ -24,5 +17,6 @@ function enterJCDS() {
     }, 500);
     setTimeout(function(){
         $('.welcomeBg').css('display','none');
+        $('.jc-content').css('max-height','unset');
     }, 1000);
 }

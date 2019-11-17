@@ -1,7 +1,32 @@
-.jc-all {
+/* ::-webkit-scrollbar — 整个滚动条.
+::-webkit-scrollbar-button — 滚动条上的按钮 (上下箭头).
+::-webkit-scrollbar-thumb — 滚动条上的滚动滑块.
+::-webkit-scrollbar-track — 滚动条轨道.
+::-webkit-scrollbar-track-piece — 滚动条没有滑块的轨道部分.
+::-webkit-scrollbar-corner — 当同时有垂直滚动条和水平滚动条时交汇的部分.
+::-webkit-resizer — 某些元素的corner部分的部分样式(例:textarea的可拖动按钮). */
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+    width: 40px;
+    background: rgb(204, 30, 82);
+}
+::-webkit-scrollbar-button,::-webkit-scrollbar-track,::-webkit-scrollbar-track-piece,::-webkit-scrollbar-corner,::-webkit-resizer {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.5);
+    border: 10px solid rgb(204, 30, 82);
+    border-radius: 20px;
+}
+
+
+
+.jc-body {
     width: 100%;
     height: 100vh;
-    background: rgb(30, 204, 189);
+    /* background: rgb(30, 204, 189); */
+    position: relative;
 }
 
 /* welcome 頁面內容 */
@@ -15,6 +40,7 @@
     overflow: hidden;
     position: relative;
     transition: all 0.5s;
+    z-index: 15;
 }
 
 .welcome-circle {    
@@ -245,8 +271,19 @@
 }
 
 /* JCDS 主要頁面內容 */
+.jc-content {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .jc-main {
-    /* width: 100%;
-    height: 100vh;
-    background: rgb(30, 204, 189); */
+    width: 100%;
+    height: 1800px;
+    /* background: rgb(238, 32, 228); */
+    background: rgb(204, 30, 82);
 }
