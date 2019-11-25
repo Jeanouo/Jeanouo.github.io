@@ -6,6 +6,8 @@
     width: 100%;
     height: auto;
     min-height: 50px;
+    max-height: 500px;
+    overflow: hidden;
     position: fixed;
     z-index: 20;
 }
@@ -13,18 +15,93 @@
 .jc-menu-triangle {
     width: 0px;
     height: 0px;
-    border-color: rgba(0,0,0,0.9) transparent transparent transparent;
+    border-color: rgba(29, 29, 29, 0.9) transparent transparent transparent;
     border-style: solid;
     border-width: 500px;
+    position: relative;
 }
+
+.menu-content {
+    width: 200px;
+    height: 305px;
+    /* border: 1px solid #fff; */
+    position: fixed;
+    top: 30px;
+    left: calc(50% - 100px);
+    overflow: auto;
+}
+
+/* 滾動條樣式 */
+.menu-content::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: none;
+}
+.menu-content::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 3px;
+}
+
+.menu-eachlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-family: 'Raleway', sans-serif;
+    color: #fafafa;
+    text-decoration: none;
+    /* background: rgba(0,0,0,0); */
+    border-bottom: 1px solid rgba(0,0,0,0);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.menu-ripple {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(204, 30, 82, 0.3);
+    position: absolute;
+    transition: all 0.5s;
+
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+.rp2 {animation-delay: 0.2s;}
+.rp3 {animation-delay: 0.4s;}
+.rp4 {animation-delay: 0.5s;}
+.rp5 {animation-delay: 0.8s;}
+
+@keyframes ripple {
+    0% {        
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {        
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+
 
 .menu-icon {
     display: flex;
     justify-content: space-between;
     width: 14px;
     height: 30px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
     transition: margin 0.8s;
+    position: fixed;
+    top: 0px;
+    left: calc(50% - 17px);
+    z-index: 20;
 }
 
 .menu-icon span {
@@ -35,5 +112,5 @@
 }
 
 .menu-icon:hover {
-    margin-top: 35px;
+    margin-top: 25px;
 }

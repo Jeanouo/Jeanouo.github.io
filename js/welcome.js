@@ -35,3 +35,9 @@ function enterJCDS() {
 //         $('.jc-content').css('max-height','unset');
 //     }, 3000);
 // }, 5000);
+
+// for 主要選單-滑入選單樣式
+$('.menu-eachlink').mouseover(function(){
+    $('.menu-icon')
+});
+
