@@ -36,38 +36,34 @@ function enterJCDS() {
 //     }, 3000);
 // }, 5000);
 
-// for 主要選單-滑入選單樣式
-$('.menu-eachlink').mouseover(function(){  
-    $(this).children('.eachlink-border').css({'width':'100%','left':'0px'});
-    $(this).prepend(
-        '<span class="menu-ripple"></span>' 
-        // '<span class="menu-ripple rp2"></span>' +
-        // '<span class="menu-ripple rp3"></span>' 
-     //    '<span class="menu-ripple rp4"></span>' +
-     //    '<span class="menu-ripple rp5"></span>' 
-     );    
-});
-
-$('.menu-eachlink').mouseout(function(){
-    $('.eachlink-border').css({'width':'0px','left':'50%'});
-    // setTimeout(function (){
-        $(this).children('span.menu-ripple').remove(); 
-    // },1000);
-});
-// var mx, my, timer;
-// var z = 2;
-// $(document).on('click', function(e){
-//     mx = e.pageX;
-//     my = e.pageY;
-//     z = z + 1;
-//     _wave(mx, my, z);
+// $('.menu-icon').on('click',function(){
+//     $('.jc-menu').toggleClass('jc-menu-open');
+//     $('.jc-menu-triangle').toggleClass('jc-menu-open');
+//     $('.menu-content').toggleClass('menu-content-open');
+//     setTimeout(function(){
+//         $('.menu-content-open').css('opacity','1');
+//     },1000);
 // });
 
-// function _wave(i, j, k){
-//     $('.menu-eachlink').prepend(
-//         '<span class="menu-ripple"></span>' +
-//         '<span class="menu-ripple rp2"></span>' +
-//         '<span class="menu-ripple rp3"></span>'
-//     );
-// }
+
+
+
+
+
+
+
+
+
+// for 主要選單-滑入選單樣式
+// $('.menu-eachlink').mouseover(function(){  
+//     $(this).children('.eachlink-border').css({'width':'100%','left':'0px'});
+//     $(this).prepend(
+//         '<span class="menu-ripple"></span>' 
+//      );    
+// });
+
+// $('.menu-eachlink').mouseout(function(){
+//     $('.eachlink-border').css({'width':'0px','left':'50%'});
+//         $(this).children('span.menu-ripple').remove(); 
+// });
 
