@@ -10,8 +10,8 @@
     overflow: hidden;
     transition: top 1s;
     position: fixed;
-    /* top: -500px; */
-    top: 0px;
+    top: -500px;
+    /* top: 0px; */
     z-index: 20;
 }
 
@@ -27,9 +27,9 @@
     top: 0px;
 }
 
-/* .jc-menu-open {    
+.jc-menu-open {    
     top: 0px;
-} */
+}
 
 .menu-content {
     width: 200px;
@@ -39,35 +39,11 @@
     overflow: auto;
     transition: all 1s;
     position: fixed;
-    /* top: -500px; */
-    top: 50px;
+    top: -500px;
+    /* top: 50px; */
     left: calc(50% - 100px);
-    transition-delay: 0s
-    transition-duration: 0s
-    transition-property: all
-    transition-timing-function: ease
+    transition: top 1s;
 }
-
-.mel1 {
-    transition-delay: 1s;
-}
-
-.mel2 {
-    transition-delay: 2s;
-}
-
-.mel3 {
-    transition-delay: 0.9s;
-}
-
-.mel4 {
-    transition-delay: 1.1s;
-}
-
-.mel5 {
-    transition-delay: 1.3s;
-}
-
 .menu-content-open {  
     top: 30px;
 }
@@ -95,10 +71,46 @@
     /* border-radius: 50px 50px 0px 0px; */
     border-bottom: 1px solid rgba(0,0,0,0);
     overflow: hidden;
+    opacity: 0;
     position: relative;
-    transition: all 0.5s;
-    
     /* border: 1px solid #fff; */
+}
+
+.show-out { 
+    animation: eachlink 0.5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes eachlink {
+    0% {        
+        top: -60px;
+        opacity: 0;
+    }
+    100% {        
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+.mel1 {
+    /* animation-delay: 1s; */
+}
+
+.mel2 {
+    animation-delay: 0.6s;
+}
+
+.mel3 {
+    animation-delay: 0.8s;
+}
+
+.mel4 {
+    animation-delay: 1s;
+}
+
+.mel5 {
+    animation-delay: 1.2s;
 }
 
 /* .eachlink-border {
@@ -148,13 +160,13 @@
 .menu-icon {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 14px;
     height: 30px;
     padding: 10px;
-    margin-top: 10px;
-    transition: margin 0.8s;
+    transition: top 0.8s;
     position: fixed;
-    top: 0px;
+    top: 10px;
     left: calc(50% - 17px);
     z-index: 20;
 }
@@ -167,5 +179,74 @@
 }
 
 .menu-icon:hover {
-    margin-top: 25px;
+    top: 25px;
 }
+
+.menu-close, .menu-close:hover {    
+    top: 330px;
+    transition: all 1s linear 0.5s;
+}
+
+.menu-close span {    
+    animation: 0.3s linear 1 1.7s;
+    animation-fill-mode: forwards;
+}
+
+.menu-close .menu-icon-1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform-origin: 50% 50%;
+    animation-name: close1;
+}
+
+@keyframes close1 {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 6px;
+    }    
+    100% {
+        left: 6px;
+        transform: rotate(45deg);
+    }
+}
+
+.menu-close .menu-icon-2 {
+    animation-name: close2;
+}
+
+@keyframes close2 {
+    0% {
+        height: 100%;
+    }
+    50% {
+        height: 0%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+.menu-close .menu-icon-3 {  
+    position: relative;
+    top: 0px;
+    right: 0px;
+    transform-origin: 50% 50%;
+    animation-name: close3;  
+}
+
+@keyframes close3 {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }    
+    100% {
+        right: 6px;
+        transform: rotate(-45deg);
+    }
+}
+
