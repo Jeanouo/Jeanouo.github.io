@@ -25,25 +25,39 @@ function enterJCDS() {
 }
 
 // for 歡迎頁面-過5s後跑時間軸,進入畫面
-setTimeout(function(){
-    $('.timeline-running').css('width','100%');
-    setTimeout(function(){
-        $('.welcomeBg').css('opacity','0');
-    }, 2000);
-    setTimeout(function(){
-        $('.welcomeBg').css('display','none');
-        $('.jc-content').css('max-height','unset');
-    }, 3000);
-}, 5000);
+// setTimeout(function(){
+//     $('.timeline-running').css('width','100%');
+//     setTimeout(function(){
+//         $('.welcomeBg').css('opacity','0');
+//     }, 2000);
+//     setTimeout(function(){
+//         $('.welcomeBg').css('display','none');
+//         $('.jc-content').css('max-height','unset');
+//     }, 3000);
+// }, 5000);
 
 // for 主要選單-滑入選單樣式
 $('.menu-icon').on('click',function(){
-    $('.menu-icon').toggleClass('menu-close');
-    $('.jc-menu').toggleClass('jc-menu-open');
-    $('.jc-menu-triangle').toggleClass('jc-menu-open');
-    $('.menu-content').toggleClass('menu-content-open');
-    $('.menu-eachlink').toggleClass('show-out');
+    var open = $('.menu-open');
+    if(open.length > 0){
+        $('.menu-icon').addClass('menu-close');
+        $('.menu-icon').removeClass('menu-open');
+        $('.jc-menu').addClass('jc-menu-open');
+        $('.jc-menu-triangle').addClass('jc-menu-open');
+        $('.menu-content').addClass('menu-content-open');
+        $('.menu-eachlink').addClass('show-out');
+    } else {
+        $('.menu-icon').addClass('menu-open');
+        $('.menu-icon').removeClass('menu-close');
+        $('.menu-eachlink').removeClass('show-out');
+        setTimeout(function(){
+            $('.jc-menu').removeClass('jc-menu-open');
+            $('.jc-menu-triangle').removeClass('jc-menu-open');
+            $('.menu-content').removeClass('menu-content-open');
+        },1200);
+    }
 });
+
 
 
 
