@@ -68,10 +68,8 @@
     font-family: 'Raleway', sans-serif;
     color: #fafafa;
     text-decoration: none;
-    /* border-radius: 50px 50px 0px 0px; */
     border-bottom: 1px solid rgba(0,0,0,0);
     overflow: hidden;
-    /* opacity: 0; */
     position: relative;
     animation: linkNoShow 0.5s linear 1;
     animation-fill-mode: forwards;
@@ -89,7 +87,6 @@
     }
 }
 
-
 .mel1 {animation-delay: 1s;}
 
 .mel2 {animation-delay: 0.75s;}
@@ -99,6 +96,7 @@
 .mel4 {animation-delay: 0.25s;}
 
 .mel5 {animation-delay: 0s;}
+
 
 .show-out { 
     opacity: 0;
@@ -117,7 +115,6 @@
     }
 }
 
-
 .show-out.mel1 {animation-delay: 0s;}
 
 .show-out.mel2 {animation-delay: 0.6s;}
@@ -128,50 +125,12 @@
 
 .show-out.mel5 {animation-delay: 1.2s;}
 
-/* .eachlink-border {
-    content: '';
-    width: 0px;
-    height: 1px;
-    border-bottom: 1px solid rgb(204, 30, 82);
-    transition: all 0.5s;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
+
+.menu-eachlink:hover {
+    
 }
 
-.menu-ripple {
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    background: rgba(204, 30, 82, 0.8);
-    position: absolute;
-    transition: all 0.5s;
-    margin-top: 50px;
-    z-index: -1;
-
-    animation-name: ripple;
-    animation-duration: 2s;
-}
-.rp2 {animation-delay: 0.2s;}
-.rp3 {animation-delay: 0.4s;}
-.rp4 {animation-delay: 0.5s;}
-.rp5 {animation-delay: 0.8s;}
-
-@keyframes ripple {
-    0% {        
-        width: 0px;
-        height: 0px;
-        left: 50%;
-        opacity: 1;
-    }
-    100% {        
-        width: 300px;
-        height: 300px;
-        left: calc(50% - 150px);
-        opacity: 0;
-    }
-} */
-
+/* menu按鈕 ||| ▼▼▼ */
 .menu-icon {
     display: flex;
     justify-content: space-between;
@@ -332,3 +291,4 @@
         right: 0px;
     }
 }
+/* menu按鈕 ||| ▲▲▲ */
