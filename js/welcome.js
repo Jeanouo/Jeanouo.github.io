@@ -2,7 +2,7 @@
 $('.welcomeBTN').mouseover(function(){
     $('.welcome-absolute').css('align-items','center');
     $('.welcome-absolute p').hide('slow');
-    $('.welcome-absolute h4').text('Enter').css({'font-size':'200%','padding-bottom':'5px','border-bottom':'2px solid #fff'});
+    $('.welcome-absolute h4').text('Enter').css({'font-size':'150%','padding-bottom':'5px','border-bottom':'2px solid #fff'});
 });
 
 // for 歡迎頁面-滑出按鈕時的狀態

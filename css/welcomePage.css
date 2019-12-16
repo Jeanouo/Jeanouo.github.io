@@ -64,7 +64,8 @@ h4    font-family: 'Ubuntu', sans-serif;
     color: #aaa;
     position: absolute;
     top: 8px;
-    left: calc(50% - 6px);
+    /* left: calc(50% - 6px); */
+    left: calc(50% - 1px);
     transform-origin:50% 50%;
     z-index: 2;
     transition: all .9s;

@@ -292,3 +292,9 @@
     }
 }
 /* menu按鈕 ||| ▲▲▲ */
+
+@media screen and (max-width: 768px){
+    .menu-open:hover {    
+        top: 10px;
+    }
+}
