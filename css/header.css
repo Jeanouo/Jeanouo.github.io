@@ -226,7 +226,7 @@
 
 .menu-open {    
     top: 10px;
-    transition: all 0.7s linear 0.3s;
+    transition: all 0.9s linear 0.3s;
 }
 
 .menu-open span {    

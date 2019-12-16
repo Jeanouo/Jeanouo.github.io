@@ -25,16 +25,16 @@ function enterJCDS() {
 }
 
 // for 歡迎頁面-過5s後跑時間軸,進入畫面
-// setTimeout(function(){
-//     $('.timeline-running').css('width','100%');
-//     setTimeout(function(){
-//         $('.welcomeBg').css('opacity','0');
-//     }, 2000);
-//     setTimeout(function(){
-//         $('.welcomeBg').css('display','none');
-//         $('.jc-content').css('max-height','unset');
-//     }, 3000);
-// }, 5000);
+setTimeout(function(){
+    $('.timeline-running').css('width','100%');
+    setTimeout(function(){
+        $('.welcomeBg').css('opacity','0');
+    }, 2000);
+    setTimeout(function(){
+        $('.welcomeBg').css('display','none');
+        $('.jc-content').css('max-height','unset');
+    }, 3000);
+}, 5000);
 
 // for 主要選單-滑入選單樣式
 $('.menu-icon').on('click',function(){
