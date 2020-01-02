@@ -1,0 +1,388 @@
+﻿@charset "utf-8";
+/* 字 */
+.b0 {
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+    .b0 A:link {
+        text-decoration: none;
+        color: #808080;
+    }
+
+    .b0 A:visited {
+        text-decoration: none;
+        color: #808080;
+    }
+
+    .b0 A:hover {
+        color: #2c2c2c;
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
+
+    .b0 A:active {
+        text-decoration: none;
+        color: #808080;
+    }
+/* 字 */
+.b {
+    color: #7198ab;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.b1 A:link {
+    text-decoration: none;
+    color: #7198ab;
+}
+
+.b1 A:visited {
+    text-decoration: none;
+    color: #7198ab;
+}
+
+.b1 A:hover {
+    color: #0e6892;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.b1 A:active {
+    text-decoration: none;
+    color: #7198ab;
+}
+/* 字 */
+.b2 {
+    color: #0095ba;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+    .b2 A:link {
+        text-decoration: none;
+        color: #0095ba;
+    }
+
+    .b2 A:visited {
+        text-decoration: none;
+        color: #0095ba;
+    }
+
+    .b2 A:hover {
+        color: #06516d;
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
+
+    .b2 A:active {
+        text-decoration: none;
+        color: #0095ba;
+    }
+/* 選單 */
+.b3 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    text-decoration: none;
+    background-image: url(../images/005_1.jpg);
+    height: 23px;
+    width: 155px;
+    text-indent: 22px;
+}
+
+    .b3 A:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b3 A:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b3 A:hover {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 23px;
+        text-decoration: none;
+        background-image: url(../images/005_2.jpg);
+        height: 23px;
+        width: 155px;
+        text-indent: 22px;
+        float: right;
+    }
+
+    .b3 A:active {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.b5 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    text-decoration: none;
+    background-image: url(../images/005_3.jpg);
+    height: 23px;
+    width: 155px;
+    text-indent: 22px;
+}
+
+    .b5 A:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b5 A:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b5 A:hover {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 23px;
+        text-decoration: none;
+        background-image: url(../images/005_4.jpg);
+        height: 23px;
+        width: 155px;
+        text-indent: 22px;
+        float: right;
+    }
+
+    .b5 A:active {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.b6 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    text-decoration: none;
+    background-image: url(../images/043.jpg);
+    height: 23px;
+    width: 155px;
+    text-indent: 22px;
+}
+
+    .b6 A:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b6 A:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b6 A:hover {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 23px;
+        text-decoration: none;
+        background-image: url(../images/043.jpg);
+        height: 23px;
+        width: 155px;
+        text-indent: 22px;
+        float: right;
+    }
+
+    .b6 A:active {
+        text-decoration: none;
+        color: #ffffff;
+    }
+/* 子選單 */
+.b4 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    text-decoration: none;
+    background-image: url(../images/034_1.jpg);
+    height: 23px;
+    width: 155px;
+    text-indent: 22px;
+}
+
+    .b4 A:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b4 A:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .b4 A:hover {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 23px;
+        text-decoration: none;
+        background-image: url(../images/034_2.jpg);
+        height: 23px;
+        width: 155px;
+        text-indent: 23px;
+        float: right;
+    }
+
+    .b4 A:active {
+        text-decoration: none;
+        color: #ffffff;
+    }
+/* 字 */
+.a1, select, textarea {
+    font-size: 12px;
+    color: #7c7c24;
+    margin: 1px;
+    padding: 1px;
+    background-color: #ffffe9;
+    border: 0px solid #948c38;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 20px;
+}
+
+.a3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #343434;
+    line-height: 18px;
+}
+
+.a4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 18px;
+}
+
+.a5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.a6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #73afba;
+    line-height: 18px;
+}
+
+.a7 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #696969;
+    line-height: 26px;
+}
+
+.a8 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #28a7c7;
+    line-height: 18px;
+}
+
+.a9 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 18px;
+}
+
+.a10 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ff4800;
+    line-height: 18px;
+}
+
+.a11 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #679ba8;
+    line-height: 18px;
+}
+
+.a12 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #696969;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+    .a12 a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #696969;
+        line-height: 26px;
+        text-decoration: none;
+    }
+/* 框 */
+.t01, select, textarea {
+    font-size: 12px;
+    color: #5d5d5d;
+    margin: 1px;
+    padding: 1px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*尚未處理*/
+.sidenav DT {
+    position: relative;
+}
+
+.notYet {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    background-color: #e60000;
+    color: #ffffff;
+    top: 3px;
+    margin-left: 3px;
+    text-align: center;
+    line-height: 17px;
+    overflow: hidden;
+}
