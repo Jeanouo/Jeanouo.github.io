@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smail Tool</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+
+    <style>
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* 開啟 */
+        .smail-tool {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #FEFEBC, #E5E04D, #96D217);
+        }
+        .st-btn-openNclose {
+            display: flex;
+            justify-content: center;
+            /* align-items: flex-start; */
+            width: 100px;
+            height: 200px;
+            background: linear-gradient(to bottom, #7FAB0C, #BBC71D);
+            border: 1px solid #FFFB7B;
+            border-radius: 50px;
+            position: relative;
+        }
+        .st-btn {
+            display: block;
+            width: 90px;
+            height: 90px;
+            background: radial-gradient(at 40% 40%, #FFFFEF 0%, #FEFBA9 15%, #F2ED72 40%, rgb(206, 197, 31) 70%, rgb(167, 159, 16) 100%);
+            border-radius: 50%;
+            box-shadow: 0 3px 11px rgba(68, 80, 8, 0.53);
+            position: absolute;
+            top: 5px;
+        }
+        .transform {
+        -webkit-transition: all 0.5s ease;  
+        -moz-transition: all 0.5s ease;  
+        -o-transition: all 0.5s ease;  
+        -ms-transition: all 0.5s ease;  
+        transition: all 0.5s ease;
+        }
+
+        /* 關閉 */
+        .smail-tool-close {
+            background: linear-gradient(to bottom, #EDEDED, #C9C9C9, #959595);
+        }
+        .st-btn-openNclose-close {            
+            /* align-items: flex-end; */
+            background: linear-gradient(to bottom, #7E7E7E, #9F9F9F);
+            border: 1px solid #E9E9E9;
+        }
+        .st-btn-close {
+            background: radial-gradient(at 40% 40%, #FFFFFF 0%, #E9E9E9 15%, #D6D6D6 40%, #B9B9B9 70%, rgb(143, 143, 143) 100%);
+            box-shadow: 0 3px 11px hsla(0, 0%, 16%, 0.53);
+            top: calc(100% - 95px);
+        }
+    </style>
+</head>
+<body class="smail-tool transform">
+    <div class="st-btn-openNclose transform">
+        <a href="#" id="st-btn" class="st-btn transform"></a>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#st-btn').click(function(){
+                $('.smail-tool').toggleClass('smail-tool-close');
+                $('.st-btn-openNclose').toggleClass('st-btn-openNclose-close');
+                $('.st-btn').toggleClass('st-btn-close');  
+        });                
+    });
+</script>
+</html>
+<!-- 
+此效果,並非全瀏覽器可順暢使用
+漸變:除了IE外,其他沒有漸變轉換效果
+滑動:IE無滑動效果 
+-->
