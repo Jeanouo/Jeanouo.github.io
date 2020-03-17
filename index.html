@@ -7,9 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>測試中測試中</title>
     <link rel="stylesheet" type="text/css" href="/css/test.css">
+
+    <!-- 暫時 -->
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        .cover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background: black;
+            z-index: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .cover a {
+            text-decoration: dashed;
+            color: #fff;
+            font-size: 22px;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 1px;
+            background: rgb(204, 30, 82);
+            border-radius: 8px;
+            padding: 10px 30px;
+        }
+        
+        .cover a:hover {
+            filter: brightness(0.9);
+            margin-top: 1px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="cover">
+        <a href="company/index.html">Enter</a>
+    </div>
     <a href="/welcome.html" class="btn-forwelconme">enter</a>
     <svg width="50" height="50" viewBox="0 0 50 50">                               
             <path fill="#707070" 
