@@ -33,7 +33,7 @@
       //  index: 短语的位置
       function write (words, index) {
         var word = words.shift();
-        if (!word) return console.log('打完鸟');
+        if (!word) return ; //console.log('打完鸟')
         word = buildWord(word, ++index);
         typing(word, true, write.bind(this, words, index));
       }
