@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="csrf-token" content="{{ csrf-token() }}">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- SEO -->
+    <meta content="{{$meta->description}}" name="description">
+    <meta content="{{$meta->keywords}}" name="keywords">
+    <!-- WEB_TITLE -->
+    <title>乐动球衣活动页面</title>
+    <link rel="stylesheet" href="/favicon/{{$_G->APP_NAME}}/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/vote-jerseys.css">
+</head>
+
+<body>
+    <header class="vj-header">
+        <div>
+            <img src="img/ld-logo.svg" alt="">
+        </div>
+    </header>
+    <main class="vj">
+        <div class="vj-first-content">
+            <h2>梦想大奖</h2>
+            <div class="vj-position">
+                <span></span>
+                <div class="position-tab">梦想发帖​</div>
+                <span></span>
+                <div class="now-position position-tab">老铁集气​</div>
+                <span></span>
+                <div class="position-tab">梦想开奖​</div>
+                <span></span>
+            </div>
+            <h4>老铁，咱们出发到英超！</h4>
+            <h3><img src="img/main-title.svg" alt=""></h3>
+            <div class="vj-text">
+                <p>写出适合南安普敦最新球衣标语</p>
+                <p>就有机会飞到英国参加英超盛事</p>
+            </div>
+        </div>
+        <div class="vj-sec-content">
+            <h5 class="vj-title5">老铁集气说明</h5>
+            <p class="vj-sred">圣徒来设计!!!</p>
+            <div class="vj-sred-content-text">
+                <p>为你最爱的南安普顿球队</p>
+                <p>选出一款最硬核的标语球衣投下关键一票！​</p>
+                <p>​获胜设计球衣将由南安普顿球员们穿上，</p>
+                <p>成为场上独一无二的专属赛前球衣！​</p>
+            </div>
+            <div class="vj-text p2">
+                <div class="vj-chcek-content-text">
+                    <p><img src="img/check.svg" alt=""> 下载乐动APP，注册成为乐动用户</p>
+                    <p class="vj-red-color"><img src="img/check.svg" alt=""> 请登入乐动体育会员参与活动</p>
+                    <p><img src="img/check.svg" alt=""> 投票选择一款心仪的球衣标语​</p>
+                </div>
+            </div>
+            <h4 class="vj-join-vote">已有<span>43286552</span>人参与票选</h4>
+        </div>
+        <div class="vj-sec-content">
+            <h5 class="vj-title5 vj-section2">投票集气</h5>
+            <div class="vj-select">
+                <div class="vj-choice-clothersImg">
+                    <img src="img/123.jpg" alt="">
+                </div>
+                <p class="">1. 请选择心仪的南安普顿球衣</p>
+                <div class="vj-select-name">
+                    <!--↑加 vj-selected class顯示成'您已投票[老鐵集氣]敬請期待'狀態-->
+                    <p class="vj-selected-text">今日投票已完成，请明日再来。</p>
+                    <p class="vj-selected-text">（每日00:00刷新）</p>
+                    <div class="vj-choice-name">
+                        <label class="vj-name-text">
+                            <input type="radio" name="clothes-name" value="name-1">
+                            <p>标语1
+                                <span></span>
+                            </p>
+                        </label>
+                        <label class="vj-name-text">
+                            <input type="radio" name="clothes-name" value="name-2">
+                            <p>标语2
+                                <span></span>
+                            </p>
+                        </label>
+                        <label class="vj-name-text">
+                            <input type="radio" name="clothes-name" value="name-3">
+                            <p>标语3
+                                <span></span>
+                            </p>
+                    </label>
+                        <label class="vj-name-text">
+                            <input type="radio" name="clothes-name" value="name-4">
+                            <p>标语4
+                                <span></span>
+                            </p>
+                    </label>
+                        <label class="vj-name-text">
+                            <input type="radio" name="clothes-name" value="name-5">
+                            <p>标语5
+                                <span></span>
+                            </p>
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="vote-jerseys3.html" class="vj-btn">投票完成</a>
+        <!--↑加 disabled 顯示成'無法點選'狀態-->
+        <div class="vj-sec-content vj-note">
+            <h5 class="vj-title5 vj-section2">发帖注意事项</h5>
+            <div class="vj-text">
+                <p>活动其间每位用户每天仅能投票集气一次。​</p>
+                <p>获胜球衣将于2020/05/10(日)梦想开奖页面公布。​</p>
+                <p>参与本活动之用户应遵守投票次数限制，不得有灌票、作弊等行为。若经发现主办单位有权取消获奖资格之权利。​​</p>
+                <p>参与本活动之用户保证所填写之个人资料均为正确属实，且为本人所持有，若填写资料不实或有误以致无法领奖，视同放弃中奖资格。​​</p>
+                <p>乐动及主办单位对于本活动保有修改、暂停或终止之权利。​</p>
+            </div>
+        </div>
+    </main>
+    <footer class="vj-foooter">乐动体育 copyright</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/vote-jerseys.js"></script>
+
+</html>

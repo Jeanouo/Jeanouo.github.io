@@ -1,0 +1,52 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: unset;
+}
+
+button {
+    border: none;
+    background-color: rgba(255,255,255,0);
+    padding: 0;
+    cursor: pointer;
+}
+
+.a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.more {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.more-2line {
+    display: -webkit-box;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}
+
+.more-3line {
+    display: -webkit-box;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}

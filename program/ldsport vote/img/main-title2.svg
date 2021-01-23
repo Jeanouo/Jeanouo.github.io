@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406" height="103" viewBox="0 0 406 103">
+    <defs>
+        <filter id="prefix__a" width="125.4%" height="124.3%" x="-12.7%" y="-7.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+        <filter id="prefix__c" width="125.4%" height="124.3%" x="-12.7%" y="-7.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+        <filter id="prefix__e" width="126.1%" height="124.3%" x="-13.1%" y="-7.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+        <filter id="prefix__g" width="124.8%" height="124.3%" x="-12.4%" y="-7.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+        <path id="prefix__b" d="M115.32 0v6.253h-8.047l-4.738 14.737h12.785v39.48h14.305V20.99h11.087V6.253h-11.087V0H115.32zm27.937 0v60.47H177.5l11.568-11.985V0h-45.812zm15.27 17.637h15.271v-2.52h-15.27v2.52zm0 15.117h15.271v-2.52h-15.27v2.52zm0 15.118h15.271v-2.52h-15.27v2.52zm-25.45-22.676V50.39l10.18-7.36V25.197h-10.18zm-27.997 0V57.95l10.18-7.914v-24.84h-10.18zm45.812 37.793v12.598l15.27-3.524V62.99h-15.27zm-22.906 0v27.715h33.774l6.948-13.01h-26.385V62.99h-14.337zm45.812 2.52v25.195l15.271-7.072V65.509H173.8zm-68.718 0v25.195l15.27-7.072V65.509h-15.27z"/>
+        <path id="prefix__d" d="M59.12 0v4.607h-8.606l-4.702 14.185H59.12v24.04h14.285v-24.04h13.13V4.607h-13.13V0H59.12zM14.881 0v4.607h-8.91L0 18.792h14.882v24.04h14.79v-24.04h13.595V4.607H29.672V0h-14.79zm61.472 20.157v22.676l10.18-7.622V20.157h-10.18zm-30.542 0v22.676l10.181-7.622V20.157h-10.18zm-12.725 0v22.676l10.18-7.622V20.157h-10.18zm-30.542 0v22.676l10.18-7.622V20.157H2.546zM6.63 45.352v25.891l15.743-6.076v-4.315H69.15v4.842L5.09 77.143v13.561l78.9-13.561v-30.03H22.371v-1.76H6.63zM33.087 62.99v7.559l17.816-2.436V62.99H33.087z"/>
+        <path id="prefix__f" d="M345.754 0v30.637l14.944-5.853v-8.322h17.86v12.53l-32.896 6.492V50.39l48.476-9.694V2.744h-33.44V0h-14.944zm-17.952 50.391h15.309V0h-15.309v50.391zm-15.308-43.02v15.305h12.757V0l-12.757 7.371zm51.028 10.266v10.078l12.757-2.357v-7.721h-12.757zm-51.028 30.235h12.757V25.196h-12.757v22.676zm32.823 2.52v3.564h-28.513l-6.862 13.255h35.642l-33.948 9.874v13.62l41.344-11.61 40.81 11.61v-13.62l-34.223-9.874h34.571V53.956h-34.394v-3.565h-14.427z"/>
+        <path id="prefix__h" d="M242.195 0L242.195 18.413 213.914 18.413 205.419 32.926 239.918 32.926 205.069 90.704 223.282 90.704 249.112 47.71 275.906 90.704 293.942 90.704 259.094 32.926 291.842 32.926 291.842 18.413 256.992 18.413 256.992 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(6 2)">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="#FFF" xlink:href="#prefix__b"/>
+        <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__d"/>
+        <use fill="#FFF" xlink:href="#prefix__d"/>
+        <g>
+            <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+            <use fill="#FFF" xlink:href="#prefix__f"/>
+        </g>
+        <g>
+            <use fill="#000" filter="url(#prefix__g)" xlink:href="#prefix__h"/>
+            <use fill="#FFF" xlink:href="#prefix__h"/>
+        </g>
+    </g>
+</svg>

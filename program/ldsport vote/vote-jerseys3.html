@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="csrf-token" content="{{ csrf-token() }}">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- SEO -->
+    <meta content="{{$meta->description}}" name="description">
+    <meta content="{{$meta->keywords}}" name="keywords">
+    <!-- WEB_TITLE -->
+    <title>乐动球衣活动页面</title>
+    <link rel="stylesheet" href="/favicon/{{$_G->APP_NAME}}/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/vote-jerseys.css">
+</head>
+
+<body>
+    <header class="vj-header">
+        <div>
+            <img src="img/ld-logo.svg" alt="">
+        </div>
+    </header>
+    <main class="vj">
+        <div class="vj-first-content">
+            <h2>梦想大奖</h2>
+            <div class="vj-position">
+                <span></span>
+                <div class="position-tab">梦想发帖​</div>
+                <span></span>
+                <div class="position-tab">老铁集气​</div>
+                <span></span>
+                <div class="now-position position-tab">梦想开奖​</div>
+                <span></span>
+            </div>
+            <h4>老铁，咱们出发到英超！</h4>
+            <h3><img src="img/main-title.svg" alt=""></h3>
+            <div class="vj-text">
+                <p>写出适合南安普敦最新球衣标语</p>
+                <p>就有机会飞到英国参加英超盛事</p>
+            </div>
+        </div>
+        <div class="vj-sec-content">
+            <video controls>
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="vj-go-next">
+                <p>下滑看活动说明</p>
+                <span><img src="img/arrow-down.svg" alt=""></span>
+            </button>
+        </div>
+        <div class="vj-third-content">
+            <h3><img src="img/main-title2.svg" alt=""></h3>
+            <h4>活动说明</h4>
+            <div class="vj-text">
+                <p class="vj-red">圣徒来设计!!!</p>
+                <div class="vj-content-text">
+                    <p>邀请大家一起为</p>
+                    <p>南安普敦队的球员设计一件赛前热身球衣​</p>
+                    <p>你们将有机会获得一次来南安普顿队</p>
+                    <p>看比赛的英超VIP梦幻体验！​</p>
+                    <p>不仅搭乘商务舱往返、住进五星级酒店，​</p>
+                    <p>最重要的，</p>
+                    <p>还能在乐动体育的VIP包厢看球，</p>
+                    <p>与一线球员面对面交流！​</p>
+                    <p>机不可失，大家快踊跃参与去！！！​</p>
+                    <p>想知道如何参加活动，</p>
+                    <p>请留意下方的活动其间详情。</p>
+                </div>
+            </div>
+        </div>
+        <div class="vj-fourth-content">
+            <div class="vj-part">
+                <p>第一期</p>
+                <p class="vj-time">04/03</p>
+                <img src="img/part-1.svg" alt="">
+                <div class="vj-part-text">
+                    <p>选出球衣</p>
+                    <p>投稿标语</p>
+                </div>
+            </div>
+            <div class="vj-part">
+                <p>第二期</p>
+                <p class="vj-time">04/20</p>
+                <img src="img/part-2.svg" alt="">
+                <div class="vj-part-text">
+                    <p>老铁应援</p>
+                    <p>拉粉投票</p>
+                </div>
+            </div>
+            <div class="vj-part">
+                <p>第三期</p>
+                <p class="vj-time vj-red">05/10</p>
+                <img src="img/part-3.svg" alt="">
+                <div class="vj-part-text">
+                    <p>高票中选</p>
+                    <p>梦想起飞</p>
+                </div>
+            </div>
+        </div>
+        <a href="vote-jerseys3-2.html" class="vj-btn">去看梦想开奖</a>
+    </main>
+    <footer class="vj-foooter">乐动体育 copyright</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/vote-jerseys.js"></script>
+
+</html>

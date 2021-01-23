@@ -1,110 +1,875 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>測試中測試中</title>
-    <link rel="stylesheet" type="text/css" href="/css/test.css">
-
-    <!-- 暫時 -->
-    <style>
-        body {
-            margin: 0px;
-        }
-        
-        .cover {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            min-height: 100vh;
-            background: black;
-            z-index: 1;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .cover a {
-            text-decoration: dashed;
-            color: #fff;
-            font-size: 22px;
-            font-family: Georgia, Times, 'Times New Roman', serif;
-            letter-spacing: 1px;
-            background: rgb(204, 30, 82);
-            border-radius: 8px;
-            padding: 10px 30px;
-        }
-        
-        .cover a:hover {
-            filter: brightness(0.9);
-            margin-top: 1px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="icon/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-    <div class="cover">
-        <a href="company/index.html">Enter</a>
+    <div class="loading">
+        <div class="loading-circle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <a href="/welcome.html" class="btn-forwelconme">enter</a>
-    <svg width="50" height="50" viewBox="0 0 50 50">                               
-            <path fill="#707070" 
-            d="M25,5c10.3,0,18.7,7.8,19.9,17.7C45,24,46.1,25,47.4,25h0c1.5,0,2.7-1.3,2.5-2.8C48.4,9.7,37.9,0,25,0S1.6,9.7,0.2,22.2
-           C0,23.7,1.1,25,2.6,25h0c1.3,0,2.3-1,2.5-2.3C6.3,12.8,14.7,5,25,5z">
-                <animateTransform  attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.8s" repeatCount="indefinite" />
-            </path>
-       </svg>
-    <svg width="200px" height="200px">
-            <rect x="0" y="0" width="80" height="30" style="fill:#ff0000;">
-                <animate attributeName="x" from="0" to="200" dur="2s" repeatCount="indefinite"/>
-                <animate attributeName="width" to="200" dur="2s" repeatCount="indefinite"/>
-                <animate attributeName="fill" to="gray" dur="2s" repeatCount="indefinite"/>
-            </rect>
-        </svg>
-    <svg width="300px" height="600px">
-            <rect x="100" y="50" width="50" height="50" style="fill:#ff0000;">
-                <animateTransform attributeName="transform" type="rotate" begin="0s" dur="10s" from="0 150 150" to="360 150 150" repeatCount="indefinite" />
-            </rect>
-        </svg>
-    <svg width="300px" height="500px">
-            <rect x="100" y="50" width="50" height="50" style="fill:#ff0000;">
-                <animateTransform attributeName="transform" type="scale" begin="0.2s" dur="3s" values="1,1; 2,2; 1,1" repeatCount="indefinite" />
-            </rect>
-        </svg>
+    <div class="main-slick">
+        <div class="index-page">
+            <div class="main-roles-wrapper">
+                <div class="main-roles">
+                    <div class="contact-text">
+                        <p class="contact-text-web">我是Jean,我身邊從左至右分別是"效率品質"、"單純善良"、"勇於挑戰"。</p>
+                        <p class="contact-text-mobile">我是Jean,我們分別代表"效率品質"、"單純善良"、"勇於挑戰"。</p>
+                    </div>
+                    <div class="talk effect">
+                        <p>尚在設置中..</p>
+                    </div>
+                    <div class="talk welcome">
+                        <span id="writer"></span>
+                    </div>
+                    <div class="talk more">
+                        <p>更多作品<br>請往右滑</p>
+                    </div>
+                    <div class="main-bounce-wrapper">
+                        <div class="loepard"><img src="img/1-loepard.png" alt=""></div>
+                        <div class="girl">
+                            <img src="img/2-girl.png" alt="">                        
+                        </div>
+                        <div class="rabbit"><img src="img/3-rabbit.png" alt=""></div>
+                        <div class="bear"><img src="img/4-bear.png" alt=""></div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="work-page">
+            <div class="works-wrapper">
+                <!-- <div class="work-class-btn">
+                    <button class="work-btn-all">All</button>
+                    <button class="work-btn-web">Web</button>
+                    <button class="work-btn-banner">Banner</button>
+                </div> -->
+                <a class="each-wrapper web ew1">
+                    <div class="case-img"><img src="img/smzb-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">SMZB Webside</p>
+                        <p class="case-time">2019-7</p>
+                    </div>                    
+                </a>
+                <a class="each-wrapper web ew2">
+                    <div class="case-img"><img src="img/ldsport-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">LDsport Webside</p>
+                        <p class="case-time">2020-2</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew3">
+                    <div class="case-img"><img src="img/example-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">娛樂城</p>
+                        <p class="case-time">2018-7</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew4">
+                    <div class="case-img"><img src="img/fr-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">FR Pay</p>
+                        <p class="case-time">2019-1</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew5">
+                    <div class="case-img"><img src="img/520love-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">520LOVE 活動頁</p>
+                        <p class="case-time">2020-5</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew6">
+                    <div class="case-img"><img src="img/ldvote-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">樂動票選 活動頁</p>
+                        <p class="case-time">2020-5</p>
+                    </div>
+                </a>  
+                <a class="each-wrapper web ew7">
+                    <div class="case-img"><img src="img/smtv-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">山貓直播</p>
+                        <p class="case-time">2019-6</p>
+                    </div>
+                </a>  
+                <a class="each-wrapper web ew8">
+                    <div class="case-img"><img src="img/lj-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">AK體育APP</p>
+                        <p class="case-time">2020-6</p>
+                    </div>
+                </a>  
+                <a class="each-wrapper web ew9">
+                    <div class="case-img"><img src="img/wecan-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">艾肯 活動頁</p>
+                        <p class="case-time">2020-3</p>
+                    </div>
+                </a>   
+                <a class="each-wrapper web ew10">
+                    <div class="case-img"><img src="img/wyquestion-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">萬億用戶調查表</p>
+                        <p class="case-time">2017-10</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew11">
+                    <div class="case-img"><img src="img/clicktest-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">icon套件設計</p>
+                        <p class="case-time">2020-4</p>
+                    </div>
+                </a>
+                <a class="each-wrapper web ew12">
+                    <div class="case-img"><img src="img/btncolor-s.png" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">按鈕換色</p>
+                        <p class="case-time">2020-6</p>
+                    </div>
+                </a>
+                <a class="each-wrapper banner ew13">
+                    <div class="case-img"><img src="img/banner/bn1-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew14">
+                    <div class="case-img"><img src="img/banner/bn2-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew15">
+                    <div class="case-img"><img src="img/banner/bn3-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew16">
+                    <div class="case-img"><img src="img/banner/bn4-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew17">
+                    <div class="case-img"><img src="img/banner/bn5-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew18">
+                    <div class="case-img"><img src="img/banner/bn6-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew19">
+                    <div class="case-img"><img src="img/banner/bn7-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew20">
+                    <div class="case-img"><img src="img/banner/bn8-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a> 
+                <a class="each-wrapper banner ew21">
+                    <div class="case-img"><img src="img/banner/bn9-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Banner</p>
+                        <p class="case-time">2017</p>
+                    </div>
+                </a>   
+                <a class="each-wrapper banner ew22">
+                    <div class="case-img"><img src="img/icon/smzb-s.jpg" alt=""></div>
+                    <div class="case-title-wrapper">
+                        <p class="case-name">Icon</p>
+                        <p class="case-time">2020-6</p>
+                    </div>
+                </a>           
+            </div>
+        </div>
+        <div class="about-page">
+            <div class="about-wrapper">
+                <div class="about-texts">
+                    <p>Hi~ 歡迎來到JCDS.</p>
+                    <p>我是網頁/平面設計師Jean，目前在學習更多與網頁相關的專業知識，期待有一天能帶給很多人更有趣又好用的網站！</p>
+                    <p>在JCDS我將陸續增加更多相關的內容及有趣的事物，也會在此紀錄我的學習筆記。好奇的可以點擊熊去看看喔~</p>
+                    <p>有時我會接案或做一些設計的東西給朋友，一方面多賺一些coco、一方面覺得與客戶溝通是相當有趣的一個過程，另一方面是希望帶給身邊朋友更多的歡笑。</p>
+                    <p>另外我也有小小經營2個FB粉絲專頁，裡面分別畫一些Q版插圖和美式插圖。</p>                
+                    <p>熱愛戶外極限運動，目前迷上攀岩的抱石，這是一項很有趣的活動，如果有興趣可以一起參與。如想更多了解，可關注我的</p>
+                    <p>近期也在學習做甜點，期待之後做的甜點都好吃又美觀。</p>
+                    <p>我也喜愛認識新朋友，如對我有興趣，請聯繫我~ :D </p>
+                </div>
+                <div class="about-link">
+                    <div class="about-link-wrapper">
+                        <p class="about-link-title">Mail</p>
+                        <p>jc2810ouo@gmail.com</p>
+                    </div>
+                    <div class="about-links-wrapper">
+                        <div class="about-link-wrapper">
+                            <p class="about-link-title">粉絲專頁</p>
+                            <p><a href="https://www.facebook.com/paintingouoLive">繪生活</a></p>
+                            <p><a href="https://www.facebook.com/usstylepaint">美式繪不會</a></p>
+                        </div>
+                        <div class="about-link-wrapper">
+                            <p class="about-link-title">履歷連結</p>
+                            <p><a href="https://www.cakeresume.com/jc2810oo">CakeResume</a></p>
+                            <p><a href="https://pda.104.com.tw/profile/edit?vno=75rsxst44">104</a></p>
+                        </div>
+                    </div>                    
+                </div>                
+            </div>
+        </div>
+    </div>   
+    <div class="learn-page-bgwrapper">
+        <div class="learn-page">
+            <div class="learn-page-btn">
+                <a class="learn-beBig">■</a>
+                <a class="learn-besmail">╬</a>
+                <a class="learn-close">×</a>
+            </div>
+            <ul class="learn-menu">
+                <li class="learn-main-li">
+                    <a class="learn-main-title">HTML</a>
+                    <ul class="learn-menu-sec">
+                        <li class="learn-sec-title">
+                            <a class="sec-back-btn"><span>▼</span></a>
+                        </li>
+                        <li class="learn-sec-title">
+                            <a class="sec-title">最佳架構</a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
 
-    <h4>為中英文斷行</h4>
-    <p>
-        word-wrap: break-word; *word-break: break-all;</p>
+                                        </div>
+                                        <div class="code">
+                                            <pre>
+                                                <code></code>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                    <div class="explain">
+                                        <p>
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="learn-sec-title">
+                            <a class="sec-title">三角形製作</a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
 
+                                        </div>
+                                        <div class="code">
+                                            <code></code>
+                                        </div>
+                                    </div>
+                                    <div class="explain">
+                                        <p>
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="learn-sec-title">
+                            <a class="sec-title">ToggleClass</a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
 
-    <img src="" alt="放入img的名稱 for 視障者" />
-    <table>
-        <tr>
-            <td>排名</td>
-            <td>姓名</td>
-            <td>成績</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Coco</td>
-            <td>98</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Cindy</td>
-            <td>88</td>
-        </tr>
-    </table>
-    <p>This <b>blod</b><sup>2</sup> and CO<sub>2</sub> <u>underline</u> text</p>
-
-    <div class="show-chick-icon st-check-box">
-        <div class="st-check"></div>
+                                        </div>
+                                        <div class="code">
+                                            <code></code>
+                                        </div>
+                                    </div>
+                                    <div class="explain">
+                                        <p>
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="learn-main-li">
+                    <a class="learn-main-title">CSS</a>
+                </li>
+                <li class="learn-main-li">
+                    <a class="learn-main-title">JS</a>
+                </li>
+            </ul>
+        </div>
+    </div>  
+    <div class="work-casies-wrapper wc1">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="http://smzb.cn/" target="_blank">
+                            <img src="img/smzb.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">SMZB Webside</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2019-7</p>
+                        <p class="case-derail-other">山貓直播平台，為我們設計團隊共同設計。直播列表、賽程表、部分直播頁、登入後好友推薦頁、貓量紀錄、簽到任務等等皆為我切板設計成果。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="work-casies-wrapper wc2">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="https://www.ldsports.uk/" target="_blank">
+                            <img src="img/ldsport.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">LDsport Webside</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-2</p>
+                        <p class="case-derail-other">樂動體育平台，從首頁動線設計到切版互動及其他頁面切版，當初與美術設計合作製作首頁，成果備受客戶喜愛及青睞。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc3">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/EXAMPLE index/index.html">
+                            <img src="img/example.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">娛樂城</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2018-7</p>
+                        <p class="case-derail-other">娛樂城為了增加不同版型樣式供客戶選擇，所製做出的其中一個版本，以星際為風格基礎做設計，從娛樂城首頁版型風格到切版製作。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc4">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/FR/bgsystem.html">
+                            <img src="img/fr.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">FR Pay</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2019-1</p>
+                        <p class="case-derail-other">FR Pay為原始某金流後台的改良版本，從顏色搭配、logog製作到後台介面樣式更改製作。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc5">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/520Love/love520.html">
+                            <img src="img/520love.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">520LOVE 活動頁</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-5</p>
+                        <p class="case-derail-other">山貓直播為了5月20日的活動做的活動頁，簡易甜美的風格。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc6">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/ldsport vote/vote-jerseys1.html"  target="_blank">
+                            <img src="img/ldvote.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">樂動票選 活動頁</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-5</p>
+                        <p class="case-derail-other">樂動為了南安普敦設計球衣，邀請球迷一起餐與活動，製做了這個說明活動頁，趁此做了許多動畫效果在裡面。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc7">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="https://shanmao.tv" target="_blank">
+                            <img src="img/smtv.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">山貓直播</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2019-6</p>
+                        <p class="case-derail-other">山貓直播為導航站，將人流導向山貓主站，為此改良過許多次，參考一些導航站做法及符合客戶需求之做。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc8">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="https://lj88.tv/" target="_blank">
+                            <img src="img/lj.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">AK體育APP</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-6</p>
+                        <p class="case-derail-other">AK體育APP版型介面設計，此動線設計方便使用者操作及觀看賽程狀態。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc9">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/wecan/index.html">
+                            <img src="img/wecan.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">艾肯 逆轉奧賽羅尼亞 活動頁</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-3</p>
+                        <p class="case-derail-other">逆轉奧賽羅尼亞為嘗試製做遊戲類活動頁，從了解大致遊戲內容、發想場景、繪製所需圖素到切版製作及動畫效果。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc10">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/wy question/html/questionnaire/questionnaire.html">
+                            <img src="img/wyquestion.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">萬億用戶調查表</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017-10</p>
+                        <p class="case-derail-other">為瞭解萬億VIP使用狀況，所做的簡易調查表。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc11">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/click test/animationIcon.html">
+                            <img src="img/clicktest.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">icon套件設計</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-4</p>
+                        <p class="case-derail-other">夢想設計出一套所有瀏覽器和裝置皆可使用的icon套件，為此嘗試做出一些button，在未來會繼續增加icon。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc12">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <!-- <div class="case-img-slick"> -->
+                    <div class="case-big-img">
+                        <a href="program/btncolor/smailTool.html">
+                            <img src="img/btncolor.png" alt="">
+                        </a>
+                    </div>
+                    <!-- https://www.ldsports.uk/ -->
+                    <!-- <div class="case-big-img">
+                        <img src="img/try1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">按鈕換色</p>
+                        <p class="case-derail-description"><span class="browser">跨瀏覽器</span><span class="RWD">RWD</span></p>  
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-6</p>
+                        <p class="case-derail-other">因應山貓直播需要換色按鈕，而衍伸至做此按鈕，目前為點擊換色，未來將改成拖拉行為。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc13">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                    <div class="case-big-img">
+                        <img src="img/banner/bn1.jpg" alt="">
+                    </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>配合動物方程式的動畫劇情，結合廣告內容製做，顯得有趣又吸睛。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc14">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn2.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>結合拉霸機與超人特攻隊做娛樂場感的廣告。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc15">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn3.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>使用較簡潔的設計方式製作，左置圖、右文字。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc16">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn4.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>結合多種遊戲角色，做出進入Pop充滿迷幻燈光和各種遊戲大螢幕的效果和強勢感。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc17">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn5.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>用各種真實與虛假物件的結合，呈現海底世界，再用船員美女圖去凸出角色和廣告內容。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc18">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn6.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>結合聖誕電影角色及新年物件，呈現聖誕和新年的活動。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc19">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn7.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>運用遊戲中角色，在背景製作出一種太空艙和機械科技的感覺，加上光線呈現畫面力道及焦點。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc20">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn8.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>運用角色本身型態，尋找、結合不同物件製作出符合她的場景，並將廣告框也設計成相同場景感的物件，達到統一性。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc21">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/banner/bn9.jpg" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Banner</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2017</p>
+                        <p class="case-derail-other">此廣告運用在萬億網站上方大廣告。</br>結合5-7個不同遊戲的角色，製作出一場"森林尋寶"感的場景畫面，運用模糊和光線製作出前、中、後景和焦點。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-casies-wrapper wc22">
+        <div class="case-detail-wrapper-bg">
+            <div class="case-detail-wrapper">
+                <div class="case-big-img">
+                    <img src="img/icon/icon.png" alt="">
+                </div>
+                <div class="case-derail">   
+                    <div class="case-wrapper-left"> 
+                        <p class="case-derail-name">Icon</p>
+                    </div>  
+                    <div class="case-wrapper-right">
+                        <p class="case-derail-time">2020-6</p>
+                        <p class="case-derail-other">此為山貓直播尚未有內容之Icon圖示設計，風格較為有趣且易懂。</p>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/text.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/dynamic.js"></script>
+    <!-- <script type="text/javascript" src="js/dragscroll.js"></script> -->
+    <script>    
+        $(document).ready(function(){
+            $('.main-slick').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+                adaptiveHeight: true, //讓他自己長高度
+            });
+    
+            $('.case-img-slick').slick({  
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // arrows: true,
+                // prevArrow: '<button class="share-prev">＜</button>',
+                // nextArrow: '<button class="share-next">＞</button>',
+                // dots: false,
+                responsive: [
+                    {
+                        // breakpoint: 480,
+                        // settings: {
+                        //     arrows: false,
+                        //     dots: false,
+                        // }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
-
 </html>

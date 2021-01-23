@@ -1,0 +1,361 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    padding: 0px 10%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.video-content {
+    position: relative;
+}
+
+.video {
+    width: 100%;
+    max-height: 850px;   /* 860px */
+    overflow: hidden;
+    position: relative;
+}
+
+.video::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.video-title {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    /* -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    background: url('../images/btn.png') no-repeat;
+    margin-top: 50px;
+    box-shadow: none;
+}
+
+.btn:hover,.btn:focus {
+    background: url('../images/btn_2.png') no-repeat;
+    box-shadow: none;
+}
+
+.mainVideo-blackBG {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.mainVideo {
+    width: calc(100vw * 0.6);
+    height: calc(55vw * 0.6);
+    height: calc(66.625vw * 0.6);
+    /* max-width: 800px; */
+    /* max-height: 533px; */
+}
+
+.mv-close {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.mv-close img {
+    width: 100%;
+}
+
+.mainVideo iframe {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* .ytp-title-enable-channel-logo .ytp-title-channel {
+    display: none !important;
+} */
+
+
+.cloud {
+    width: 100%;
+    height: 230px;
+    background: url('../images/cloud.png') center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    bottom: -90px;
+    z-index: 2;
+}
+
+.cloud img {
+    width: 100%;
+}
+
+.worldView {
+    position: relative;
+}
+
+.worldView-bg {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.worldView-bg img {
+    width: 100%;
+    height: 102%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.castle-move {
+    animation-name: castle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes castle {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        top: -3px;
+        left: -5px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.cloud-move {
+    animation-name: cloud;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.worldView-content {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 10%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.wv-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.wv-text section {
+    margin-top: 30px;
+}
+
+.wv-text p {
+    font-size: 22px;
+    font-family: '微軟正黑體', Arial, Helvetica;
+    font-weight: bolder;
+    color: rgb(71, 23, 8);
+    text-align: right;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    cursor: default;
+}
+
+.wv-carousel-content {
+    flex: 1.5;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.wv-carousel-content img {
+    border: 1px dotted #fff;
+    border-radius: 15px;
+}
+
+.item img {
+    max-height: 340px;
+    width: auto !important;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.item:hover img {
+    opacity: 1;
+}
+
+.line {
+    width: 100%;
+    height: 18px;
+    background-image: url('../images/header.jpg');
+    box-shadow: inset 0 0 8px rgba(0,0,0,1), 0px 0px 30px 10px rgba(0,0,0,0.5);
+    border-top: 2px solid rgb(138, 115, 102);  
+    border-bottom: 1px solid rgb(138, 115, 102);  
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.introduction {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.introduction-carousel {
+    height: 100vh;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    /* transform: translateY(-300px); */
+}
+
+.introduction-carousel .carousel-item {
+    width: 800px;
+    height: auto;
+}
+
+.introduction-content {
+    width: 618px;
+    height: 322px;
+    font-family: '微軟正黑體', Arial, Helvetica;  
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.intro-bg1 {
+    background: url('../images/chara_box.png') no-repeat;
+}
+
+.intro-bg2 {
+    background: url('../images/chara_box2.png') no-repeat;
+}
+
+.intro-bg3 {
+    background: url('../images/chara_box3.png') no-repeat;
+}
+
+.introduction-text {
+    width: 100%; 
+    height: 100%;
+    padding: 30px;
+}
+
+.classNName {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 30px;  
+    color: #ffe981;
+}
+
+.class {    
+    width: 128px;
+    padding-left: 60px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 128px);
+}
+
+.skill {
+    height: 66px;
+    margin-top: 36px;
+}
+
+.skill-connection {
+    height: 66px;
+    margin-top: 20px;
+}
+
+h6 {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    color: #efad50;
+}
+
+.skill h6 {
+    margin-left: 80px;
+}
+
+
+.skill-connection h6 {
+    margin-left: 110px;
+}
+
+.intro-text {
+    color: #e1c296;
+    padding: 5px;
+}

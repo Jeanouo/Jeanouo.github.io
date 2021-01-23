@@ -1,0 +1,796 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FR金流系統 </title>
+        <link href="css/newstyle.css" rel="stylesheet" type="text/css">    
+    </head>
+<body>
+    <nav>
+        <h1><img src="img/logo.png" />LOGO</h1>
+        <div>
+            <p><span>平台余额 : 36024.6268</span> ( 计算时间 : 2019-01-13 22:33:28 )</p>
+        </div>
+        <button type="button" onclick="javascript:location.href='bgsystem.html'">登出</button>
+        <div>
+            <p>欢迎, <span id="name">Kenny</span></p>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <h2>网站管理系统</h2>
+        <div class="tableoverhd">
+            <table>
+                <tr>
+                    <td valign="top">
+                        <dl class="sidenav">
+                            <dt id="ctl00_dt3" class="active">交易纪录</dt>
+                            <dd id="ctl00_dd3">
+                                <a id="deposit-btn">存款申请</a>
+                                <a id="withdrawal-btn">提款申请</a>
+                                <a id="record-btn">交易纪录</a>
+                            </dd>
+                            <dt id="ctl00_dt6">交易统计</dt>
+                            <dd id="ctl00_dd6">
+                                <a id="dailyrecord-btn">日交易统计</a>
+                            </dd>
+                            <dt id="ctl00_dt7">后台取款补款</dt>
+                            <dd id="ctl00_dd7">
+                                <a id="BEw-btn">后台取款</a>
+                                <a id="BEr-btn">后台补款</a>
+                            </dd>
+                            <dt id="ctl00_dt8">后台管理</dt>
+                            <dd id="ctl00_dd7">
+                                <a id="EDM-btn">萬億EDM System</a>
+                            </dd>
+                            <dt id="" class="changekey nocontent"><a id="changepassword-btn">更改密码</a></dt>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <main>
+        <div id="welcome" class="contentbox">
+            <div class="mainpage">
+                <img src="img/logo2.png">
+                <h1>欢迎进入FR金流系统</h1>
+            </div>
+        </div>
+        <div id="deposit" class="contentbox noshow">
+            <h3>存款申请</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>
+                <div class="inputbox">
+                    <label>存款方式</label>
+                    <select>
+                        <option value="0">全部</option>
+                        <option value="1">银行卡</option>
+                        <option value="2">在线支付</option>
+                        <option value="3">快捷支付</option>
+                        <option value="4">扫码支付</option>
+                        <option value="5">虚拟币</option>
+                        <option value="6">其他</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label>申请金额</label>
+                    <input onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2" NAME="Text2" class="long" />
+                </div>
+                <div class="inputbox">
+                    <label>存款人</label>
+                    <input name="name" type="text" class="short"  />
+                </div>
+                <div class="inputbox">
+                    <label>存款订单号</label>
+                    <input name="number" type="text" class="long" />
+                </div>
+                <div class="inputbox">
+                    <select>
+                        <option value="0">所有状态</option>
+                        <option value="1">已对帐</option>
+                        <option value="2">未对帐</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                    <button type="button">导出</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>存款订单号</th>
+                        <th>币别</th>
+                        <th>存款银行</th>
+                        <th>存款方式</th>
+                        <th>存款人</th>
+                        <th>申请金额</th>
+                        <th>实际存入</th>
+                        <th>到帐日期</th>
+                        <th>申请时间</th>
+                        <th>核对日期</th>
+                        <th>订单状态</th>
+                        <th>通知状态</th>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>12</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="precautions note">
+                <h4>备注 :</h4>
+                <p>手续费 = 我司收取的手续费. </p>
+                <p>手续费 = 我司收取的手续费. </p>
+            </div>
+        </div>
+        
+        <div id="withdrawal" class="contentbox noshow">
+            <h3>提款申请</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>
+                <div class="inputbox">
+                    <label>提款方式</label>
+                    <select>
+                        <option value="0">全部</option>
+                        <option value="1">银行卡</option>
+                        <option value="2">在线提款</option>
+                        <option value="3">虚拟币</option>
+                        <option value="4">其他</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label>提款金额</label>
+                    <input onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2" NAME="Text2" class="long" />
+                </div>
+                <div class="inputbox">
+                    <label>提款人</label>
+                    <input name="name" type="text" class="short"  />
+                </div>
+                <div class="inputbox">
+                    <label>提款单号</label>
+                    <input name="number" type="text" class="long" />
+                </div>
+                <div class="inputbox">
+                    <select>
+                        <option value="0">所有状态</option>
+                        <option value="1">已对帐</option>
+                        <option value="2">未对帐</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                    <button type="button">导出</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>提款单号</th>
+                        <th>币别</th>
+                        <th>提款银行</th>
+                        <th>提款方式</th>
+                        <th>提款人</th>
+                        <th>提款金额</th>
+                        <th>实际提出</th>
+                        <th>到帐日期</th>
+                        <th>申请时间</th>
+                        <th>核对日期</th>
+                        <th>订单状态</th>
+                        <th>通知状态</th>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>银行卡</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>银行卡</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>2</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="precautions note">
+                <h4>备注 :</h4>
+                <p>手续费 = 我司收取的手续费. </p>
+            </div>
+        </div>
+        
+        <div id="record" class="contentbox noshow">
+            <h3>交易纪录</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>
+                <div class="inputbox">
+                    <label>存/提款</label>
+                    <select>
+                        <option value="0">全部</option>
+                        <option value="1">存款</option>
+                        <option value="2">提款</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label>存/提款方式</label>
+                    <select>
+                        <option value="0">全部</option>
+                        <option value="1">银行卡</option>
+                        <option value="2">在线存/提款</option>
+                        <option value="3">快捷支付</option>
+                        <option value="4">扫码支付</option>
+                        <option value="5">虚拟币</option>
+                        <option value="6">其他</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label>存/提款金额</label>
+                    <input onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2" NAME="Text2" class="long" />
+                </div>
+                <div class="inputbox">
+                    <label>存/提款人</label>
+                    <input name="name" type="text" class="short"  />
+                </div>
+                <div class="inputbox">
+                    <label>存/提款单号</label>
+                    <input name="number" type="text" class="long" />
+                </div>
+                <div class="inputbox">
+                    <select>
+                        <option value="0">所有状态</option>
+                        <option value="1">已对帐</option>
+                        <option value="2">未对帐</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                    <button type="button">导出</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>存/提款单号</th>
+                        <th>币别</th>                        
+                        <th>存/提款</th>
+                        <th>银行</th>
+                        <th>存/提款方式</th>
+                        <th>存/提款人</th>
+                        <th>金额</th>
+                        <th>实际金额</th>
+                        <th>到帐日期</th>
+                        <th>申请时间</th>
+                        <th>核对日期</th>
+                        <th>订单状态</th>
+                        <th>通知状态</th>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>存款</td>
+                        <td>银联支付</td>
+                        <td>银行卡</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>提款</td>
+                        <td>银联支付</td>
+                        <td>银行卡</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>2</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="precautions note">
+                <h4>备注 :</h4>
+                <p>手续费 = 我司收取的手续费. </p>
+            </div>
+        </div>        
+        
+        <div id="dailyrecord" class="contentbox daytable noshow">
+            <h3>日交易统计</h3>
+            <div class="box nobtm">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>                
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>项目</th>
+                        <th>项目名称</th>
+                        <th>数值</th>
+                    </tr>
+                    <tr class="yl">
+                        <td></td>
+                        <td>初期餘額</td>
+                        <td>13245674890</td>
+                    </tr>
+                    <tr class="plus">
+                        <td rowspan="2">+项</td>
+                        <td>存款訂單號</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="plus">
+                        <td>存款訂單號</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="less">
+                        <td rowspan="2">-项</td>
+                        <td>存款訂單號</td>
+                        <td>245675000</td>
+                    </tr>
+                    <tr class="less">
+                        <td>存款訂單號</td>
+                        <td class="orange">3000000000</td>
+                    </tr>
+                    <tr class="yl">
+                        <td>=</td>
+                        <td>期末餘額</td>
+                        <td>10000000000</td>
+                    </tr>
+                    <tr class="less">
+                        <td></td>
+                        <td>应收帐款</td>
+                        <td>10000000000</td>
+                    </tr>
+                    <tr class="yl">
+                        <td></td>
+                        <td>实收余额</td>
+                        <td>10000000000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>12</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="precautions note">
+                <h4>备注 :</h4>
+                <p>手续费 = 我司收取的手续费. </p>
+                <p>手续费 = 我司收取的手续费. </p>
+            </div>
+        </div>
+        
+        <div id="BEw" class="contentbox noshow">
+            <h3>后台取款</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>                
+                <div class="inputbox">
+                    <select>
+                        <option value="0">全选</option>
+                        <option value="1">新订单</option>
+                        <option value="2">支付成功</option>
+                        <option value="3">支付失败</option>
+                        <option value="4">支付退款</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                </div>
+            </div>
+            <div>                
+                <div class="inputbox">
+                    <button type="button" class="bluebg">栏位设定</button>
+                    <button type="button" class="BEw-btn"><i class="fas fa-plus-circle"></i>新增平台取款提案</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>操作</th>
+                        <th>帐号</th>
+                        <th>帐号来源</th>
+                        <th>订单编号</th>
+                        <th>用户名</th>
+                        <th>存款金额</th>
+                        <th>手续费</th>
+                        <th>存款渠道</th>
+                        <th>备注</th>
+                        <th>订单状态</th>
+                        <th>建立时间</th>
+                        <th>最后修改时间</th>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>12</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="blackbg noshow">
+                <div class="outbox">
+                    <div>
+                        <h3>后台取款提案</h3>
+                        <button>×</button>
+                    </div>
+                    <div class="message">
+                        <h4>取款信息</h4> 
+                        <div class="msgbox">
+                            <label><span>* </span>平台资金 :</label><br>
+                            <input name="" type=""/>
+                        </div>                
+                        <div class="msgbox">
+                            <label><span>* </span>取款银行卡 :</label><br>
+                            <select>
+                                <option value="0">请选择</option>
+                                <option value="1">公司入款银行转帐</option>
+                            </select>
+                        </div>          
+                        <div class="msgbox">
+                            <label><span>* </span>银行户名 :</label><br>
+                            <input name="" type=""/>
+                        </div>        
+                        <div class="msgbox">
+                            <label><span>* </span>银行名称 :</label><br>
+                            <input name="" type=""/>
+                        </div>        
+                        <div class="msgbox">
+                            <label><span>* </span>银行卡号 :</label><br>
+                            <input name="" type=""/>
+                        </div>        
+                        <div class="msgbox">
+                            <label><span>* </span>取款金额 :</label><br>
+                            <input name="" type="" />
+                        </div>      
+                        <div class="msgbox">
+                            <label>备注 :</label><br>
+                            <textarea rows="4"></textarea>
+                        </div>
+                        <p>请您留意：请再次确认取款银行卡及金额正确无误。因卡号错误时造成的损失，金流平台概不负责。</p>
+                    </div>              
+                    <div class="inputbox centerbox">
+                        <button type="button">确认</button>
+                        <button type="button" class="bluebg">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="BEr" class="contentbox noshow">
+            <h3>后台补款</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>日期</label>
+                    <span>從</span> <input name="from" type="date" />
+                    <span>到</span> <input name="to" type="date" />
+                </div>                
+                <div class="inputbox">
+                    <select>
+                        <option value="0">全选</option>
+                        <option value="1">新订单</option>
+                        <option value="2">已对帐</option>
+                        <option value="3">订单取消</option>
+                        <option value="4">订单逾期</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <button type="button">查询</button>
+                </div>
+            </div>
+            <div>                
+                <div class="inputbox">
+                    <button type="button" class="bluebg">栏位设定</button>
+                    <button type="button" class="BEr-btn"><i class="fas fa-plus-circle"></i>新增平台补款提案</button>
+                </div>
+            </div>
+            <div class="tableoverhd">
+                <table>
+                    <tr>
+                        <th>操作</th>
+                        <th>帐号</th>
+                        <th>帐号来源</th>
+                        <th>订单编号</th>
+                        <th>用户名</th>
+                        <th>存款金额</th>
+                        <th>手续费</th>
+                        <th>存款渠道</th>
+                        <th>备注</th>
+                        <th>订单状态</th>
+                        <th>建立时间</th>
+                        <th>最后修改时间</th>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>D2019011505290797724627WY</td>
+                        <td>RMB</td>
+                        <td>银联支付</td>
+                        <td>扫码支付</td>
+                        <td>辜一军</td>
+                        <td>100.0000</td>
+                        <td>0.0000</td>
+                        <td></td>
+                        <td>2019-01-15 17:29:08</td>
+                        <td></td>
+                        <td>未对账	</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page note">
+                <div>
+                    <p>当前有 <span>12</span> 条数据.当前页:第 <span>1</span> 页,共 <span>1</span> 页</p>
+                </div>
+                <ul>
+                    <li><a href="#">|<</a></li>
+                    <li><a href="#"><</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="#">>|</a></li>
+                </ul>
+            </div>
+            <div class="blackbg noshow">
+                <div class="outbox">
+                    <div>
+                        <h3>后台补款提案</h3>
+                        <button>×</button>
+                    </div>
+                    <div class="message">
+                        <h4>补款信息</h4> 
+                        <div class="msgbox">
+                            <label><span>*</span>存款渠道 :</label><br>
+                            <select>
+                                <option value="0">请选择</option>
+                                <option value="1">公司入款银行转帐</option>
+                            </select>
+                        </div>                
+                        <div class="msgbox">
+                            <label><span>* </span>真实姓名 :</label><br>
+                            <input name="" type="" />
+                        </div>          
+                        <div class="msgbox">
+                            <label><span>* </span>补款金额 :</label><br>
+                            <input name="" type="" />
+                        </div>      
+                        <div class="msgbox">
+                            <label>备注 :</label><br>
+                            <textarea rows="10"></textarea>
+                        </div>
+                    </div>              
+                    <div class="inputbox centerbox">
+                        <button type="button">确认</button>
+                        <button type="button" class="bluebg">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="EDM" class="contentbox modify noshow">
+            <h3>萬億EDM System</h3>
+            <p>工作排程</p> 
+            <div class="tableoverhd">           
+                <table>
+                    <tr>
+                        <th>编号</th>
+                        <th>商家</th>
+                        <th>帐号</th>
+                        <th>变更密码</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Admin User</td>
+                        <td>admin</td>
+                        <td><input type="text" /></td>
+                        <td>
+                            <button type="button">修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Admin User</td>
+                        <td>admin</td>
+                        <td><input type="text" /></td>
+                        <td>
+                            <button type="button">修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Admin User</td>
+                        <td>admin</td>
+                        <td><input type="text" /></td>
+                        <td>
+                            <button type="button">修改</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="changepassword" class="contentbox pswd noshow">
+            <h3>更改密码</h3>
+            <div class="box">
+                <div class="inputbox">
+                    <label>旧密码</label>
+                    <input name="name" type="text" class="longer" />
+                </div>
+                <div class="inputbox">
+                    <label>新密码</label>
+                    <input name="number" type="text" class="longer" />
+                </div>
+                <div class="inputbox">
+                    <label>确认密码</label>
+                    <input name="number" type="text" class="longer" />
+                </div>
+                <div class="inputbox">
+                    <button type="button">确定提交</button>
+                    <button type="button" class="bluebg">重设</button>
+                </div>
+            </div>            
+        </div>
+    </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+<script type="text/javascript" src="js/dynamic.js"></script> 
+</html>

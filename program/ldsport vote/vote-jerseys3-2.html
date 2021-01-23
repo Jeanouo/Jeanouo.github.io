@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="csrf-token" content="{{ csrf-token() }}">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- SEO -->
+    <meta content="{{$meta->description}}" name="description">
+    <meta content="{{$meta->keywords}}" name="keywords">
+    <!-- WEB_TITLE -->
+    <title>乐动球衣活动页面</title>
+    <link rel="stylesheet" href="/favicon/{{$_G->APP_NAME}}/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/vote-jerseys.css">
+</head>
+
+<body>
+    <header class="vj-header">
+        <div>
+            <img src="img/ld-logo.svg" alt="">
+        </div>
+    </header>
+    <main class="vj">
+        <div class="vj-first-content">
+            <h2>梦想大奖</h2>
+            <div class="vj-position">
+                <span></span>
+                <div class="position-tab">梦想发帖​</div>
+                <span></span>
+                <div class="position-tab">老铁集气​</div>
+                <span></span>
+                <div class="now-position position-tab">梦想开奖​</div>
+                <span></span>
+            </div>
+            <h4>老铁，咱们出发到英超！</h4>
+            <h3><img src="img/main-title.svg" alt=""></h3>
+            <div class="vj-text">
+                <p>写出适合南安普敦最新球衣标语</p>
+                <p>就有机会飞到英国参加英超盛事</p>
+            </div>
+        </div>
+        <div class="vj-sec-content">
+            <video controls>
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="vj-go-next">
+                <p>下滑看活动说明</p>
+                <span><img src="img/arrow-down.svg" alt=""></span>
+            </button>
+        </div>
+        <div class="vj-third-content">
+            <h5 class="vj-title5">梦想大奖行前说明</h5>
+            <p class="vj-sred">专为中国球迷定制的<br>梦幻足球之旅：</p>
+            <div class="vj-text">
+                <div class="vj-chcek-content-text">
+                    <p><img src="img/check.svg" alt=""> 七天奢华住宿体验​</p>
+                    <p><img src="img/check.svg" alt=""> 最具代表性的英国足球文化景点</p>
+                    <p><img src="img/check.svg" alt=""> 商务舱往返专车接送​​</p>
+                    <p><img src="img/check.svg" alt=""> 足球专家全程陪同向导​​</p>
+                </div>
+            </div>
+        </div>
+        <div class="vj-third-content vj-point">
+            <h5 class="vj-title5">旅程亮点</h5>
+            <div class="vj-content-text">
+                <p>VIP英超观赛体验 <img src="img/arrow-right.svg" alt="" class="arrow-r"> 对话英超一线队球员</p>
+                <p><img src="img/arrow-right.svg" alt="" class="arrow-r"> 英国足球文化体验</p>
+            </div>
+        </div>
+        <a href="https://www.ldsports.uk/" class="vj-btn">出发英超完整记录</a>
+    </main>
+    <footer class="vj-foooter">乐动体育 copyright</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/vote-jerseys.js"></script>
+
+</html>

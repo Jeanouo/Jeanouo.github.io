@@ -1,0 +1,173 @@
+
+<!-- saved from url=(0034)http://edm.wanyi01.local/index.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        後端管理系統
+    </title>
+        
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0; background:#f7f7f7; font-family: "微軟正黑體";}
+
+        main {
+            display: block;
+            width: 560px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }   
+        
+        main h1 {
+            text-align: center;
+        }
+        
+        
+        main h1 img {
+            width: 120px;
+        }
+        
+        .box {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #d2d2d2;
+            overflow: hidden;
+        }
+        
+        .box h2 {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #1573d1;
+            color: #f7f7f7;
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .content {
+            width: 100%;
+            padding: 15px 50px;
+            color: #909090;
+        }
+        
+        .inputbox {
+            width: 100%;  
+            margin: 11px; /*for opera 設定第4個input用*/
+        }
+        
+        .inputbox p  {
+            width: 120px;  
+            float:left;
+            margin: 0;            
+            line-height: 35px;
+        }
+        
+        input {
+            width: 50%;
+            height: 35px;
+            padding: 10px;
+        }
+        
+        .Vcode {
+            width: 104px;
+            height: 35px;
+            float: right;
+            background-image: url(img/numberbg.jpg);
+            background-size: cover;            
+        }
+        
+        .Vcode span {
+            display: inline-block;
+            width: 25%;    
+            float:left;
+        }
+        
+        .Vcode img {
+            width: 100%;
+            height: auto;        
+        }
+
+        button {
+            display: block;
+            width: 80px;
+            height: 40px;
+            color: #f7f7f7;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid #74b1ed;
+            border-radius: 5px;
+            background: linear-gradient(to top, #075da2 0%, #1574d2 100%); 
+                background: -moz-linear-gradient(bottom, #075da2 0%, #1574d2 100%); 
+                background: -webkit-linear-gradient(bottom, #075da2 0%, #1574d2 100%); 
+                background: -o-linear-gradient(bottom, #075da2 0%, #1574d2 100%); 
+            margin: 0 auto 30px;;
+        }
+
+        button:hover, button:focus {
+            border: 1px solid #5d94ca;
+            background: linear-gradient(to top, #0c5087 0%, #0f65ba 100%); 
+                background: -moz-linear-gradient(bottom, #0c5087 0%, #0f65ba 100%); 
+                background: -webkit-linear-gradient(bottom, #0c5087 0%, #0f65ba 100%); 
+                background: -o-linear-gradient(bottom, #0c5087 0%, #0f65ba 100%); 
+        }
+    </style>
+
+    <script language="javascript">
+
+    // function check(){
+    //     var thisForm = document.form1;
+    //     alertStr = "";
+    //     if (thisForm.account.value==""){
+    //         alertStr += "[管理者帳號]";
+    //     }
+    //     if (thisForm.passwd.value==""){
+    //         alertStr += "[管理者密碼]";
+    //     }
+    //     if (thisForm.CheckNo.value=="0"){
+    //         alertStr += "[系統檢核碼]";
+    //     }
+    //     if( alertStr != '' ) {
+    //         alertStr += "這些欄位必須填選";
+    //         alert( alertStr );
+    //         return;
+    //     }
+    //     thisForm.submit();	
+    // }
+    </script>
+    </head>
+
+<body>
+    <main>
+        <h1><img src="img/logo2.png"></h1>
+        <div class="box">
+            <h2>网站管理系统</h2>
+            <div class="content">
+                <div class="inputbox">
+                    <p><labe>商务号 :</labe></p>
+                    <input type="text">
+                </div>
+                <div class="inputbox">
+                    <p><labe>管理者帐号 :</labe></p>
+                    <input type="text">
+                </div>
+                <div class="inputbox">
+                    <p><labe>管理者密码 :</labe></p>
+                    <input type="text">
+                </div>
+                <div class="inputbox">
+                    <p><labe>系统检核码 :</labe></p>
+                    <input type="text">
+                    <div class="Vcode">
+                        <span><img src="img/1.png"></span>
+                        <span><img src="img/2.png"></span>
+                        <span><img src="img/3.png"></span>
+                        <span><img src="img/4.png"></span>
+                    </div>
+                </div>
+            </div>            
+            <button type="button" onclick="javascript:location.href='FRsystem.html'">登入</button>
+        </div>
+    </main>
+</body></html>

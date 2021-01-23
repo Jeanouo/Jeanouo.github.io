@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="289" height="74" viewBox="0 0 289 74">
+    <defs>
+        <linearGradient id="prefix__b" x1="-.002%" x2="100.003%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FFB39E"/>
+            <stop offset="100%" stop-color="#FF7CC8"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1=".005%" x2="99.998%" y1="49.989%" y2="49.989%">
+            <stop offset="0%" stop-color="#FFB39E"/>
+            <stop offset="100%" stop-color="#FF7CC8"/>
+        </linearGradient>
+        <linearGradient id="prefix__h" x1="0%" x2="100%" y1="50.001%" y2="50.001%">
+            <stop offset="0%" stop-color="#FFB39E"/>
+            <stop offset="100%" stop-color="#FF7CC8"/>
+        </linearGradient>
+        <path id="prefix__a" d="M3.788 0.686L0.251 4.33 13.011 4.33 16.547 0.686z"/>
+        <path id="prefix__d" d="M4.095 0.013L0.56 3.659 13.322 3.659 16.857 0.013z"/>
+        <path id="prefix__g" d="M41.74 0.723L38.203 4.37 47.885 4.37 38.559 19.893 26.838 19.893 23.303 23.539 36.367 23.539 49.164 23.539 45.627 27.187 34.176 27.187 29.246 35.389 6.362 35.389 0 45.975 22.886 45.975 17.238 55.374 159.684 55.374 157.916 57.198 260.492 57.198 264.028 53.552 250.602 53.552 255.049 46.152 274.323 46.152 277.86 42.507 257.239 42.507 266.444 27.187 255.573 27.187 259.108 23.539 268.635 23.539 282.436 23.539 288.796 12.953 274.997 12.953 280.153 4.37 97.851 4.37 101.386 0.723z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(34.873 .145)">
+            <mask id="prefix__c" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <path fill="url(#prefix__b)" d="M3.788 0.686L0.251 4.33 13.011 4.33 16.547 0.686z" mask="url(#prefix__c)"/>
+        </g>
+        <g transform="translate(234.101 69.657)">
+            <mask id="prefix__f" fill="#fff">
+                <use xlink:href="#prefix__d"/>
+            </mask>
+            <path fill="url(#prefix__e)" d="M4.095 0.013L0.56 3.659 13.322 3.659 16.857 0.013z" mask="url(#prefix__f)"/>
+        </g>
+        <g transform="translate(0 7.462)">
+            <mask id="prefix__i" fill="#fff">
+                <use xlink:href="#prefix__g"/>
+            </mask>
+            <path fill="url(#prefix__h)" d="M41.74 0.723L38.203 4.37 47.885 4.37 38.559 19.893 26.838 19.893 23.303 23.539 36.367 23.539 49.164 23.539 45.627 27.187 34.176 27.187 29.246 35.389 6.362 35.389 0 45.975 22.886 45.975 17.238 55.374 159.684 55.374 157.916 57.198 260.492 57.198 264.028 53.552 250.602 53.552 255.049 46.152 274.323 46.152 277.86 42.507 257.239 42.507 266.444 27.187 255.573 27.187 259.108 23.539 268.635 23.539 282.436 23.539 288.796 12.953 274.997 12.953 280.153 4.37 97.851 4.37 101.386 0.723z" mask="url(#prefix__i)"/>
+        </g>
+    </g>
+</svg>

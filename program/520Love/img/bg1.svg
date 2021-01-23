@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="553" height="159" viewBox="0 0 553 159">
+    <defs>
+        <linearGradient id="prefix__b" x1="-.004%" x2="99.998%" y1="50.009%" y2="50.009%">
+            <stop offset="0%" stop-color="#FFC4B3"/>
+            <stop offset="100%" stop-color="#FF95D3"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1=".001%" x2="100.003%" y1="49.995%" y2="49.995%">
+            <stop offset="0%" stop-color="#FFC4B3"/>
+            <stop offset="100%" stop-color="#FF95D3"/>
+        </linearGradient>
+        <linearGradient id="prefix__h" x1="0%" x2="100%" y1="50.001%" y2="50.001%">
+            <stop offset="0%" stop-color="#FFC4B3"/>
+            <stop offset="100%" stop-color="#FF95D3"/>
+        </linearGradient>
+        <path id="prefix__a" d="M32.699 0.246L25.62 8.314 0.07 8.314 7.148 0.246z"/>
+        <path id="prefix__d" d="M32.827 0.783L25.75 8.851 0.198 8.851 7.278 0.783z"/>
+        <path id="prefix__g" d="M175.708 0.545L168.597 8.359 535.231 8.359 524.859 26.748 552.613 26.748 539.822 49.426 492.904 49.426 485.793 57.24 507.661 57.24 489.148 90.061 530.62 90.061 523.51 97.873 484.743 97.873 475.8 113.723 502.798 113.723 495.69 121.535 289.395 121.535 292.951 117.631 34.669 117.631 46.027 97.493 0 97.493 12.79 74.813 58.82 74.813 68.731 57.24 91.763 57.24 98.874 49.426 46.865 49.426 53.976 41.615 77.544 41.615 96.303 8.359 76.834 8.359 83.943 0.545z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".3">
+        <g transform="translate(0 .513) translate(71 .487)">
+            <mask id="prefix__c" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <path fill="url(#prefix__b)" d="M32.699 0.246L7.148 0.246 0.07 8.314 25.62 8.314z" mask="url(#prefix__c)"/>
+        </g>
+        <g transform="translate(0 .513) translate(444 148.487)">
+            <mask id="prefix__f" fill="#fff">
+                <use xlink:href="#prefix__d"/>
+            </mask>
+            <path fill="url(#prefix__e)" d="M0.198 8.851L25.75 8.851 32.827 0.783 7.278 0.783z" mask="url(#prefix__f)"/>
+        </g>
+        <g transform="translate(0 .513) translate(0 16.487)">
+            <use fill="url(#prefix__h)" xlink:href="#prefix__g"/>
+        </g>
+    </g>
+</svg>

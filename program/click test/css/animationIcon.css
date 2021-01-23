@@ -1,0 +1,274 @@
+#animationIcon {
+    background: rgb(119, 167, 173);
+}
+
+.aI-main {
+    width: 80%;
+    max-width: 1400px;
+    height: auto;
+    background: #156;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+.aI-title {
+    color: #ddd;
+    font-size: 35px;
+    font-family: Impact, monospace, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.aI-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    margin: 50px auto;
+}
+
+.aI-each-icon {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+.aI-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(76, 150, 150);
+    border-radius: 5px;
+}
+
+.aI-each-icon:hover .aI-box {
+    background: rgba(76, 150, 150, 0.5);
+}
+
+.aI-icon {
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+    cursor: pointer;
+    /* background: rgba(133, 197, 152, 0.6); */
+}
+
+.aI-icon:hover {
+    /* background: rgb(133, 197, 152); */
+}
+
+.aI-icon-title {
+    text-align: center;
+    color: rgb(76, 150, 150);
+    font-family: monospace, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    margin: 8px auto;
+}
+
+.aI-each-icon:hover .aI-icon-title {
+    filter: brightness(1.22);
+}
+
+
+/* aIcon-menu-bounce ▼▼▼ */
+.aIcon-menu-bounce {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aIcon-menu-bounce span {
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+    border-radius: 10px;
+}
+.aIcon-menu-bounce .icon-menu.s1 {
+    -webkit-animation: menuBounce 0.8s ease-in-out 0.4s;
+    animation: menuBounce 0.8s ease-in-out 0.4s;
+}
+.aIcon-menu-bounce .icon-menu.s2 {
+    -webkit-animation: menuBounce 1s ease-in-out 0.2s;
+    animation: menuBounce 1s ease-in-out 0.2s;
+}
+.aIcon-menu-bounce .icon-menu.s3 {
+    -webkit-animation: menuBounce 1.2s ease-in-out;
+    animation: menuBounce 1.2s ease-in-out;
+}
+.aIcon-menu-bounce .icon-menu.s4 {
+    -webkit-animation: menuBounce 0.9s ease-in-out 0.3s;
+    animation: menuBounce 0.9s ease-in-out 0.3s;
+}
+@-webkit-keyframes menuBounce {
+    0% { width: 100%;}
+    30% { width: 40%;}
+    50% { width: 100%;}
+    60% { width: 60%;}
+    75% { width: 100%;}
+    85% { width: 80%;}
+    100% { width: 100%;}
+}
+@keyframes menuBounce {
+    0% { width: 100%;}
+    30% { width: 40%;}
+    50% { width: 100%;}
+    60% { width: 60%;}
+    75% { width: 100%;}
+    85% { width: 80%;}
+    100% { width: 100%;}
+}
+
+
+/* aIcon-menu-bounce2 ▼▼▼ */
+.aIcon-menu-bounce2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aIcon-menu-bounce2 span {
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+    border-radius: 10px;
+}
+.aIcon-menu-bounce2 .icon-menu.s1 {
+    -webkit-animation: menuBounce2 0.8s ease-in-out;
+    animation: menuBounce2 0.8s ease-in-out;
+}
+@-webkit-keyframes menuBounce2 {
+    0% { width: 100%;}
+    40% { width: 20%;}
+    60% { width: 20%;}
+    75% { width: 100%;}
+    85% { width: 70%;}
+    100% { width: 100%;}
+}
+@keyframes menuBounce2 {
+    0% { width: 100%;}
+    40% { width: 20%;}
+    60% { width: 20%;}
+    75% { width: 100%;}
+    85% { width: 70%;}
+    100% { width: 100%;}
+}
+
+
+/* aIcon-menu-rotate ▼▼▼ */
+.aIcon-menu-rotate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aIx-frame {
+    display: flex;
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+    border-radius: 10px;
+}
+.aIcon-menu-rotate span {
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+    border-radius: 10px;
+    transition-property: width;
+}
+.aIcon-menu-rotate > .s1 {
+    -webkit-transform-origin: 3px 1.5px;
+    transform-origin: 3px 1.5px;
+    transition-property: transform, width;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+.aIcon-menu-rotate .aIx-frame .s1 {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition-property: transform, width;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.aIcon-menu-rotate .s2 {
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+.aIcon-menu-rotate .s3 {
+    transition-duration: 1.08s;
+    transition-delay: 0.1s;
+}
+.aIcon-menu-rotate .s4 {
+    transition-duration: 0.5s;
+}
+.aIcon-menu-rotate > .icon-menu.s1 {
+    width: 140%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 3px 1.5px;
+    transform-origin: 3px 1.5px;
+    transition-property: transform, width;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.aIcon-menu-rotate .aIx-frame .icon-menu.s1 {
+    width: 140%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition-property: transform, width;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+.aIcon-menu-rotate .icon-menu.s2 {
+    width: 38%;
+    transition: width 0.5s 0.04s;
+}
+.aIcon-menu-rotate .icon-menu.s3 {
+    width: 40%;
+    transition: width 0.8s 0.16s;
+}
+.aIcon-menu-rotate .icon-menu.s4 {
+    width: 0%;
+    transition: width 0.5s 0.5s;
+}
+
+
+@-webkit-keyframes menuRotate {
+    0% { width: 100%;}
+    50% { -webkit-transform: rotate(45deg); width: 140%;}
+    100% { -webkit-transform: rotate(45deg); width: 140%;}
+}
+
+/* aIcon-menu-point */
+.aIcon-menu-point {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.aIcon-menu-point span {
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+.aIcon-menu-point > .icon-menu.s1 {
+    width: 15%;
+}
+
+
+@media screen and (max-width: 1024px){    
+    .aI-main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px){    
+    .aI-main {
+        width: 100%;
+    }
+}
