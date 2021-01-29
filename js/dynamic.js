@@ -2,6 +2,15 @@ $('.loading').delay(2000).fadeOut(400);
 // $('.welcome').hide();
 // $('.welcome').delay(5000).fadeIn(100);
 
+$(window).scroll(function(){
+    if($(this).scrollTop() > 100){
+        $('.slick-dots').addClass('slick-dots-scroll');
+    } else {        
+        $('.slick-dots').removeClass('slick-dots-scroll');
+    }
+});
+
+
 $(window).click(function(){
     $('.contact-text').css('display','none');
     $('.effect').animate({opacity:'0'});
@@ -75,7 +84,8 @@ $('.learn-besmail').click(function(){
 setTimeout(function(){
     var writer = new TypeWriter({
         container: document.querySelector('#writer'),
-        strs: ['Welcome to JCDS Webside.','Click US.'],
+        // strs: ['Welcome to JCDS Webside.','Click US.'],
+        strs: ['歡迎來到JCDS!   ','請點擊我們↙↓↘'],
         delay: 200,
     });
 }, 6000);

@@ -75,7 +75,12 @@ body {
 .main-slick {
 }
 .slick-dots {
-    bottom: 0;
+    height: 80px;
+    background: rgb(144,144,144,0);  
+    position: fixed;
+    bottom: unset;
+    top: 0;
+    transition: all 0.5s linear;
 }
 .slick-dots li button {
     position: fixed;
@@ -104,6 +109,15 @@ body {
 .slick-dots li:nth-of-type(3) button:before {
     content: 'About';
 }
+.slick-dots-scroll {
+    background: rgb(144,144,144,0.6);   
+    border-bottom: 5px solid #000;
+}
+.slick-dots-scroll li button:before,
+.slick-dots-scroll li.slick-active button:before {
+    color: #fff;
+}
+
 .main-slick div:focus {
     outline: none;
 }
@@ -147,7 +161,7 @@ body {
     100% {width: 100%;}
 }
 .main-roles > div {
-    z-index: 1;
+    z-index: 120;
     transition: 0.1s all linear;
 }
 .contact-text {
@@ -157,7 +171,7 @@ body {
     background: rgb(151, 154, 179);
     border: 5px solid #000;
     border-radius: 0 0 10px 10px;
-    padding: 30px;
+    padding: 20px;
     position: absolute;
     top: 91.5%;
     left: calc(50% - 225px);
@@ -1259,6 +1273,9 @@ h6 {
     .main-roles {
         width: calc(100% - 40px);
         padding: 0 10px;
+    }
+    .contact-text {
+        line-height: 20px;
     }
     .contact-text p {
         font-size: 12px;
