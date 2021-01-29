@@ -763,6 +763,7 @@ h6 {
 .learn-menu {
     width: 450px;
     height: calc(100vh - 100px);
+    position: relative;
 }
 .learn-menu-sec {
     width: 100%;
@@ -774,7 +775,7 @@ h6 {
     overflow-y: auto;
 }
 .learn-main-li {
-    position: relative;
+    /* position: relative; */
 }
 .learn-main-title {
     display: flex;
@@ -785,7 +786,7 @@ h6 {
     background: #1d1d1d;
     padding: 0 20px;
     margin: 1px 0;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
 }
 .learn-main-title:hover,
@@ -817,7 +818,17 @@ h6 {
     outline: none;
 }
 .sec-back-btn span{
+    margin-right: 5px;
     transform: rotate(90deg);
+}
+.sec-renew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 100px - 60px - 4px);
+    color: rgb(119 119 119);
+    background: #222222;
 }
 .learn-content-wrapper {
     display: none;
