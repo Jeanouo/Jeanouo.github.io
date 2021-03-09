@@ -112,11 +112,13 @@ $('.sec-title').click(function(){
     $(this).parent().siblings().children('.learn-content-wrapper').slideUp();
     $(this).next('.learn-content-wrapper').slideToggle();
 });
-$(function(){
-    $('.liearn-webNside-1').click(function(){
-        $('.learn-content-wrapper').slideUp();
-        $('#liearn-webNside-1 ~ .learn-content-wrapper').slideDown();
-    });
+$('.liearn-webNside-1').click(function(){
+    $('.learn-content-wrapper').slideUp();
+    $('#liearn-webNside-1 ~ .learn-content-wrapper').slideDown();
+});
+$('.liearn-SEOrelatedTools-1').click(function(){
+    $('.learn-content-wrapper').slideUp();
+    $('#liearn-SEOrelatedTools-1 ~ .learn-content-wrapper').slideDown();
 });
 
 

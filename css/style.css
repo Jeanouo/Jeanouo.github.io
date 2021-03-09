@@ -890,9 +890,10 @@ h6 {
     font-size: 12px;
     padding-right: 10px;
 }
-.dots a {
+.link {
     display: inline-block;
     color: #d0d889;
+    text-decoration: underline;
     padding: 0 5px;
 }
 .point {
