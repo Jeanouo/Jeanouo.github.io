@@ -807,9 +807,228 @@
                         <li class="learn-sec-title">
                             <a class="sec-back-btn"><span>▼</span>JS</a>
                         </li>
-                        <li class="learn-sec-title">
+                        <!-- <li class="learn-sec-title">
                             <p class="sec-renew">內容尚在更新中..</p>
+                        </li> -->
+                        <li class="learn-sec-title">
+                            <a class="sec-title">製作"聯絡我們"表單</a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
+
+                                        </div>
+                                        <div class="code">
+                                            <p>
+                                                HTML
+                                                <span>
+                                                    &lt;form method="post" action="mail.php"&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&lt;div class="formbox"&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar"&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>公司名稱 / &lt;em&gt;Company&lt;/em&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error"&gt;&lt;?php if(!empty($_GET['company'])){echo "必填欄位";}?&gt;&lt;/span&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b&gt;'
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="tf" name="C_company"  placeholder="請輸入公司名稱" required&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar"&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&lt;label&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&lt;b&gt;姓名 / &lt;em&gt;Name&lt;/em&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error"&gt;&lt;?php if(!empty($_GET['name'])){echo "必填欄位";}?&gt;&lt;/span&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&lt;/b&gt;
+                                                    <br>
+                                                    &nbsp;&nbsp;&lt;input type="text" class="tf" name="C_name"  placeholder="請輸入姓名" required&gt;
+                                                    <br>
+                                                    &lt;/label&gt;
+                                                            <!--</div>
+                                                            <div class="tfbar">
+                                                                <label class="tel">
+                                                                    <b>公司電話 / <em>Telephone</em><span class="error"><?php if(!empty($_GET['tel'])){if($_GET['tel']=='1'){echo "必填欄位";}else{echo "格式錯誤";}}?></span>
+                                                                    </b>
+                                                                    <input type="tel" class="tf" name="C_tel"  maxlength="12" pattern="[0]{1}[2-8]{1}-[0-9]{3,4}-[0-9]{4}" placeholder="請輸入02-8888-8888..." required>
+                                                                </label>
+                                                                <label class="ext">
+                                                                    <b>分機 / <em>Extension</em></span>
+                                                                    </b>
+                                                                    <input type="num" class="tf" name="C_ext" placeholder="請輸入分機">
+                                                                </label>
+                                                            </div>
+                                                            <div class="tfbar">
+                                                                <label>
+                                                                    <b>手機 / <em>Cell</em>
+                                                                        <span class="error"><?php if(!empty($_GET['cell'])){if($_GET['cell']=='1'){echo "必填欄位";}else{echo "格式錯誤";}}?></span>
+                                                                    </b>
+                                                                    <input type="tel" class="tf" name="C_cell"  maxlength="12" pattern="[0]{1}[9]{1}[0-9]{2}-[0-9]{3}-[0-9]{3}" placeholder="請輸入手機0988-888-888..." required>
+                                                                </label>
+                                                            </div>
+                                                            <div class="tfbar">
+                                                                <label>
+                                                                    <b>信箱 / <em>Email</em>
+                                                                        <span class="error"><?php if(!empty($_GET['email'])){if($_GET['email']=='1'){echo "必填欄位";}else{echo "格式錯誤";}}?></span>
+                                                                    </b>
+                                                                    <input type="email" class="tf" name="C_email"  maxlength="60"  placeholder="請輸入信箱" required>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tfbtn"><button type="submit" class="submit_btn">送出洽詢 / Submit</button></div>
+                                                    </form>
+                                                </span>
+                                                javascript
+                                                <span>
+                                                    <!-- <?php
+                                                    // 解壓縮後的檔案位置
+                                                    include("class.phpmailer.php");
+                                                    
+                                                        $C_company=$_POST['C_company'];
+                                                        $C_name=$_POST['C_name'];
+                                                     //   $C_email=$_POST['C_email'];
+                                                        $C_tel=$_POST['C_tel'];
+                                                     //   $C_message=$_POST['C_message'];
+                                                        $C_ext=$_POST['C_ext'];
+                                                        $C_cell=$_POST['C_cell'];
+                                                        $C_email=$_POST['C_email'];
+                                                        $date=date('Y/m/d H:i:s');
+                                                    
+                                                    // 產生 Mailer 實體
+                                                    $mail = new PHPMailer();
+                                                    
+                                                    // 設定為 SMTP 方式寄信
+                                                    $mail->IsSMTP();
+                                                    
+                                                    // SMTP 伺服器的設定，以及驗證資訊
+                                                    $mail->SMTPAuth = true;      
+                                                    $mail->SMTPSecure = "ssl";    
+                                                    $mail->Host = "mail.olily.com";
+                                                    $mail->Port = 465;
+                                                    
+                                                    // 信件內容的編碼方式       
+                                                    $mail->CharSet = "utf-8";
+                                                    
+                                                    // 信件處理的編碼方式
+                                                    $mail->Encoding = "base64";
+                                                    
+                                                    // SMTP 驗證的使用者資訊
+                                                    $mail->Username = "web-edm-5";
+                                                    $mail->Password = "d6rbg84vds4543534";     
+                                                    
+                                                    // 信件內容設定  
+                                                    $mail->From = "web-edm-5@olily.com";
+                                                    $mail->FromName = "歐立利國際展覽設計集團-顧客通知";
+                                                    $mail->Subject = "歐立利國際展覽設計集團-顧客通知-MidiaLabService"; 
+                                                    $mail->Body    = 
+                                                                    '<div>
+                                                                        管理者，您好<p>
+                                                                        有一則來自歐立利國際展覽設計集團通知<p>
+                                                                        公司名:'.$_POST['C_company'].'<p>
+                                                                        姓名:&emsp;'.$_POST['C_name'].'<p>
+                                                                        公司電話:&emsp;'.$_POST['C_tel'].'<p>
+                                                                        分機:&emsp;'.$_POST['C_ext'].'<p>
+                                                                        手機:&emsp;'.$_POST['C_cell'].'<p>
+                                                                        信箱:'.$_POST['C_email'].'<p>
+                                                                        時間:'.$date.'<p>
+                                                                    </div>';
+                                                    
+                                                    
+                                                    $mail->IsHTML(true);
+                                                    
+                                                    // 收件人
+                                                    // $mail->AddAddress("irene@olily.com", "irene");
+                                                    $mail->AddAddress("Rita@olily.com", "管理者");
+                                                    $mail->AddAddress("Claudia@olily.com", "管理者");
+                                                    
+                                                    // 顯示訊息
+                                                    if(!$mail->Send()) {     
+                                                        echo '{"success": false}';
+                                                    } else {
+                                                        echo '{"success": true}';
+                                                    } 
+                                                    ?>                                                     -->
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="explain">
+                                        <h6>影響SEO方向</h6>  
+                                        <p class="dots">網站公司 - 網站架設、主機維護</p>
+                                        <p class="dots">營運單位 - 產品銷售、消費者回饋與觀察</p>     
+                                        <p class="dots">行銷單位 - 支援優化、更新內容</p>
+                                        <p class="dots">優化團隊 - SEO技術執行、策略擬定</p>
+                                        <p class="point">“SEO專案沒有結案的一天，只有階段性任務的完成”</p>
+                                        <table class="learn-table">
+                                            <tr>
+                                                <th>Step 1. 擬定操作策略</th> 
+                                                <P>lorem</P>
+                                            </tr>
+                                            <tr>
+                                                <td>網站健檢</td>
+                                            </tr>
+                                            <tr>
+                                                <td>案件履歷</td>
+                                            </tr>
+                                            <tr>
+                                                <td>行銷STP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>競爭對手分析</td>
+                                            </tr>
+                                        </table>
+                                        <table class="learn-table">
+                                            <tr>
+                                                <th>Step 2. 基礎優化調整</th>
+                                            </tr>
+                                            <tr>
+                                                <td>結構調整</td>
+                                            </tr>
+                                            <tr>
+                                                <td>全站差異化</td>
+                                            </tr>
+                                            <tr>
+                                                <td>內／外部連結規劃</td>
+                                            </tr>
+                                            <tr>
+                                                <td>內容配置建議</td>
+                                            </tr>
+                                        </table>
+                                        <table class="learn-table">
+                                            <tr>
+                                                <th>Step 3. 進階優化規劃</th>
+                                            </tr>
+                                            <tr>
+                                                <td>手機版網站優化</td>
+                                            </tr>
+                                            <tr>
+                                                <td>多語系網站優化</td>
+                                            </tr>
+                                            <tr>
+                                                <td>網站速度改善</td>
+                                            </tr>
+                                            <tr>
+                                                <td>社群SEO建議</td>
+                                            </tr>
+                                        </table>
+                                        <p>成效好壞必須依據當初預計達成的目標來看，且必須依據網站類別、使用者意圖來評估。</p>
+                                        <p>成效評估標準包括加入的會員名單數、網站瀏覽人次、首頁跳出率、訪客回訪率、績效指標的設定等，每種數據背後顯示的意義也不同，因此成效評估不能單一而論。</p>
+                                        <p><a class="link" href="https://www.seoseo.com.tw/article_detail_591.html" target="_blank">相關來源</a></p> 
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+                        
                     </ul>
                 </li>
             </ul>
