@@ -1,0 +1,24 @@
+/* an-whirling-1 */
+.an-whirling-1:hover .an-whirling {
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.ontology-1 {
+}
+.ontology-2 {
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+.an-whirling-1:hover .ontology-2 {
+    z-index: 1;
+}
+
+/* an-whirling-2 */
+.an-whirling-2:hover .an-whirling {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.ontology-3 {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.an-whirling-2:hover .ontology-3 {
+    z-index: 1;
+}
