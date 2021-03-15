@@ -791,6 +791,119 @@
                     </ul>
                 </li>
                 <li class="learn-main-li">
+                    <a class="learn-main-title">HTML</a>                    
+                    <ul class="learn-menu-sec">
+                        <li class="learn-sec-title">
+                            <a class="sec-back-btn"><span>▼</span>HTML</a>
+                        </li>
+                        <li class="learn-sec-title">
+                            <a class="sec-title">&lt;abbr></a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
+                                            <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+                                        </div>
+                                        <div class="code">
+                                            <span>
+                                                &lt;p>
+                                                <br>
+                                                &nbsp;&nbsp;&lt;abbr title="Cascading Style Sheets">CSS&lt;/abbr>
+                                                <br>
+                                                &lt;/p>
+                                            </span>
+                                        </div>
+                                        <div class="explain">
+                                            <h6>abbr屬性</h6>  
+                                            <p>&lt;abbr>屬性專用在英文縮寫解釋上，當hover時，可以加上attributes的title來標示縮寫全文。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>   
+                        <li class="learn-sec-title">
+                            <a class="sec-title">&lt;address></a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
+                                            <address>
+                                                Written by <a href="mailto:jc2810oo@gmail.com">Jean</a>.
+                                                <br> 
+                                                Visit us at:
+                                                <br>
+                                                jeanouo.github.io
+                                                <br>
+                                                新北市汐止區
+                                            </address>
+                                        </div>
+                                        <div class="code">
+                                            <span>                                                
+                                                &lt;address>Written by
+                                                <br> 
+                                                &nbsp;&nbsp;&lt;a href="mailto:jc2810oo@gmail.com">
+                                                <br> 
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Jean
+                                                <br> 
+                                                &nbsp;&nbsp;&lt;/a>.
+                                                <br>
+                                                &nbsp;&nbsp;Visit us at:
+                                                <br>
+                                                &nbsp;&nbsp;jeanouo.github.io
+                                                <br>
+                                                &nbsp;&nbsp;新北市汐止區
+                                                <br>
+                                                &lt;/address>
+                                            </span>
+                                        </div>
+                                        <div class="explain">
+                                            <h6>address屬性</h6>  
+                                            <p>當寫道地址時使用&lt;address>屬性。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                         
+                        <li class="learn-sec-title">
+                            <a class="sec-title">&lt;area></a>
+                            <div class="learn-content-wrapper">                             
+                                <div class="learn-content">
+                                    <div class="resultNcode">
+                                        <div class="result">
+                                            <img src="img/code/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                                            <map name="workmap">
+                                                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                                                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                                                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+                                            </map>
+                                        </div>
+                                        <div class="code">
+                                            <span>
+                                                &lt;img src="img/code/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                                                <br>
+                                                &lt;map name="workmap">
+                                                <br>
+                                                &nbsp;&nbsp;&lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                                                <br>
+                                                &nbsp;&nbsp;&lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                                                <br>
+                                                &nbsp;&nbsp;&lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+                                                &lt;/map>
+                                            </span>
+                                        </div>
+                                        <div class="explain">
+                                            <h6>area屬性</h6>  
+                                            <p>可利用&lt;area>屬性內的設定，去自定義img內的多邊形區塊連結。</p>
+                                            <p>(1) 圖片本身設定&lt;usemap>屬性值，用id方式去搜尋&lt;map>屬性內相同的name id做連結。</p>
+                                            <p>(2) 再在&lt;map>屬性裡面定義許多&lt;area>屬性區塊，並定義它的形狀值(shape)為預設default | 矩形rect | 圓形circle | 三角形poly，再用coords屬性值定義形狀點和大小，以及alt、href，以及alt、href。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>     
+                    </ul>
+                </li>
+                <li class="learn-main-li">
                     <a class="learn-main-title">CSS</a>                    
                     <ul class="learn-menu-sec">
                         <li class="learn-sec-title">
@@ -822,50 +935,51 @@
                                             <p>
                                                 HTML
                                                 <span>
-                                                    &lt;form method="post" action="mail.php"&gt;
+                                                    &lt;form method="post" action="mail.php">
                                                     <br>
-                                                    &nbsp;&nbsp;&lt;div class="formbox"&gt;
+                                                    &nbsp;&nbsp;&lt;div class="formbox">
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar"&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar">
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label?>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>公司名稱 / &lt;em&gt;Company&lt;/em&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>公司名稱 / &lt;em>Company&lt;/em>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error"&gt;&lt;?php if(!empty($_GET['company'])){echo "必填欄位";}?&gt;&lt;/span&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error">&lt;?php if(!empty($_GET['company'])){echo "必填欄位";}?>&lt;/span>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b&gt;'
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="tf" name="C_company"  placeholder="請輸入公司名稱" required&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="tf" name="C_company"  placeholder="請輸入公司名稱" required>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar"&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar">
                                                     <br>
-                                                    &nbsp;&nbsp;&lt;label&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label>
                                                     <br>
-                                                    &nbsp;&nbsp;&lt;b&gt;姓名 / &lt;em&gt;Name&lt;/em&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>姓名 / &lt;em>Name&lt;/em>
                                                     <br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error"&gt;&lt;?php if(!empty($_GET['name'])){echo "必填欄位";}?&gt;&lt;/span&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error">&lt;?php if(!empty($_GET['name'])){echo "必填欄位";}?>&lt;/span>
                                                     <br>
-                                                    &nbsp;&nbsp;&lt;/b&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b>
                                                     <br>
-                                                    &nbsp;&nbsp;&lt;input type="text" class="tf" name="C_name"  placeholder="請輸入姓名" required&gt;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="tf" name="C_name"  placeholder="請輸入姓名" required>
                                                     <br>
-                                                    &lt;/label&gt;
-                                                            <!--</div>
-                                                            <div class="tfbar">
-                                                                <label class="tel">
-                                                                    <b>公司電話 / <em>Telephone</em><span class="error"><?php if(!empty($_GET['tel'])){if($_GET['tel']=='1'){echo "必填欄位";}else{echo "格式錯誤";}}?></span>
-                                                                    </b>
-                                                                    <input type="tel" class="tf" name="C_tel"  maxlength="12" pattern="[0]{1}[2-8]{1}-[0-9]{3,4}-[0-9]{4}" placeholder="請輸入02-8888-8888..." required>
-                                                                </label>
-                                                                <label class="ext">
-                                                                    <b>分機 / <em>Extension</em></span>
-                                                                    </b>
-                                                                    <input type="num" class="tf" name="C_ext" placeholder="請輸入分機">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label>
+                                                    <br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tfbar">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tel">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>公司電話 / &lt;em>Telephone&lt;/em>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="error">&lt;?php if(!empty($_GET['tel'])){if($_GET['tel']=='1'){echo "必填欄位";}else{echo "格式錯誤";}}?>&lt;/span>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" class="tf" name="C_tel"  maxlength="12" pattern="[0]{1}[2-8]{1}-[0-9]{3,4}-[0-9]{4}" placeholder="請輸入02-8888-8888..." required>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="ext">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b>分機 / <em>Extension</em></span></b>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;  input type="num" class="tf" name="C_ext" placeholder="請輸入分機">
                                                                 </label>
                                                             </div>
                                                             <div class="tfbar">
@@ -961,70 +1075,70 @@
                                                 </span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="explain">
-                                        <h6>影響SEO方向</h6>  
-                                        <p class="dots">網站公司 - 網站架設、主機維護</p>
-                                        <p class="dots">營運單位 - 產品銷售、消費者回饋與觀察</p>     
-                                        <p class="dots">行銷單位 - 支援優化、更新內容</p>
-                                        <p class="dots">優化團隊 - SEO技術執行、策略擬定</p>
-                                        <p class="point">“SEO專案沒有結案的一天，只有階段性任務的完成”</p>
-                                        <table class="learn-table">
-                                            <tr>
-                                                <th>Step 1. 擬定操作策略</th> 
-                                                <P>lorem</P>
-                                            </tr>
-                                            <tr>
-                                                <td>網站健檢</td>
-                                            </tr>
-                                            <tr>
-                                                <td>案件履歷</td>
-                                            </tr>
-                                            <tr>
-                                                <td>行銷STP</td>
-                                            </tr>
-                                            <tr>
-                                                <td>競爭對手分析</td>
-                                            </tr>
-                                        </table>
-                                        <table class="learn-table">
-                                            <tr>
-                                                <th>Step 2. 基礎優化調整</th>
-                                            </tr>
-                                            <tr>
-                                                <td>結構調整</td>
-                                            </tr>
-                                            <tr>
-                                                <td>全站差異化</td>
-                                            </tr>
-                                            <tr>
-                                                <td>內／外部連結規劃</td>
-                                            </tr>
-                                            <tr>
-                                                <td>內容配置建議</td>
-                                            </tr>
-                                        </table>
-                                        <table class="learn-table">
-                                            <tr>
-                                                <th>Step 3. 進階優化規劃</th>
-                                            </tr>
-                                            <tr>
-                                                <td>手機版網站優化</td>
-                                            </tr>
-                                            <tr>
-                                                <td>多語系網站優化</td>
-                                            </tr>
-                                            <tr>
-                                                <td>網站速度改善</td>
-                                            </tr>
-                                            <tr>
-                                                <td>社群SEO建議</td>
-                                            </tr>
-                                        </table>
-                                        <p>成效好壞必須依據當初預計達成的目標來看，且必須依據網站類別、使用者意圖來評估。</p>
-                                        <p>成效評估標準包括加入的會員名單數、網站瀏覽人次、首頁跳出率、訪客回訪率、績效指標的設定等，每種數據背後顯示的意義也不同，因此成效評估不能單一而論。</p>
-                                        <p><a class="link" href="https://www.seoseo.com.tw/article_detail_591.html" target="_blank">相關來源</a></p> 
-                                    </div>
+                                        <div class="explain">
+                                            <h6>影響SEO方向</h6>  
+                                            <p class="dots">網站公司 - 網站架設、主機維護</p>
+                                            <p class="dots">營運單位 - 產品銷售、消費者回饋與觀察</p>     
+                                            <p class="dots">行銷單位 - 支援優化、更新內容</p>
+                                            <p class="dots">優化團隊 - SEO技術執行、策略擬定</p>
+                                            <p class="point">“SEO專案沒有結案的一天，只有階段性任務的完成”</p>
+                                            <table class="learn-table">
+                                                <tr>
+                                                    <th>Step 1. 擬定操作策略</th> 
+                                                    <P>lorem</P>
+                                                </tr>
+                                                <tr>
+                                                    <td>網站健檢</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>案件履歷</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>行銷STP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>競爭對手分析</td>
+                                                </tr>
+                                            </table>
+                                            <table class="learn-table">
+                                                <tr>
+                                                    <th>Step 2. 基礎優化調整</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>結構調整</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>全站差異化</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>內／外部連結規劃</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>內容配置建議</td>
+                                                </tr>
+                                            </table>
+                                            <table class="learn-table">
+                                                <tr>
+                                                    <th>Step 3. 進階優化規劃</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>手機版網站優化</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>多語系網站優化</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>網站速度改善</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>社群SEO建議</td>
+                                                </tr>
+                                            </table>
+                                            <p>成效好壞必須依據當初預計達成的目標來看，且必須依據網站類別、使用者意圖來評估。</p>
+                                            <p>成效評估標準包括加入的會員名單數、網站瀏覽人次、首頁跳出率、訪客回訪率、績效指標的設定等，每種數據背後顯示的意義也不同，因此成效評估不能單一而論。</p>
+                                            <p><a class="link" href="https://www.seoseo.com.tw/article_detail_591.html" target="_blank">相關來源</a></p> 
+                                        </div>
+                                    </div>                                    
                                 </div>
                             </div>
                         </li>
