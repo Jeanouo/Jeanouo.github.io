@@ -14,6 +14,22 @@ $('.aIcon-menu-bounce2').on('click',function(){
     },1200);        
 });
 
+// menu-bounce3 icon
+$('.aIcon-menu-bounce3').on('click',function(){            
+    $(this).children().addClass('icon-menu');
+    setTimeout(function(){
+        $('.aIcon-menu-bounce3').children().removeClass('icon-menu');
+    },1200);        
+});
+
+// menu-bounce4 icon
+$('.aIcon-menu-bounce4').on('click',function(){            
+    $(this).children().addClass('icon-menu');
+    setTimeout(function(){
+        $('.aIcon-menu-bounce4').children().removeClass('icon-menu');
+    },1200);        
+});
+
 // menu-rotate icon
 $('.aIcon-menu-rotate').on('click',function(){            
     $(this).children().toggleClass('icon-menu');       
