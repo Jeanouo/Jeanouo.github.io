@@ -80,7 +80,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.aIcon-menu-bounce span {
+.aI-icon span {
     width: 100%;
     min-height: 14%;
     background: #fff;
@@ -153,6 +153,32 @@
     75% { width: 100%;}
     85% { width: 70%;}
     100% { width: 100%;}
+}
+
+
+/* aIcon-menu-bounce3 ▼▼▼ */
+.aIcon-menu-bounce3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.aIcon-menu-bounce3 .icon-menu.s1 {
+    -webkit-animation: menuBounce2 0.8s ease-in-out;
+    animation: menuBounce2 0.8s ease-in-out;
+}
+
+
+/* aIcon-menu-bounce4 ▼▼▼ */
+.aIcon-menu-bounce4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.aIcon-menu-bounce4 .icon-menu.s1 {
+    -webkit-animation: menuBounce2 0.8s ease-in-out;
+    animation: menuBounce2 0.8s ease-in-out;
 }
 
 
