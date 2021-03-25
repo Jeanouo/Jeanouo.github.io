@@ -64,25 +64,6 @@ section .fixed-width > p {
     margin: 40px auto;
 }
 
-/* top */
-.top {
-    width: 35px;
-    height: 35px;
-    background: #482a18;
-    border-radius: 50%;
-    padding: 10px;
-    outline: none;
-    position: fixed;
-    bottom: 90px;
-    right: 180px;
-    z-index: 1;
-    transition: all 0.3s;
-}
-.top:hover,
-.top:focus {
-    filter: brightness(1.5);
-}
-
 /* header */
 .header-1 {
     display: flex;
@@ -360,6 +341,25 @@ input:last-child {
 input:last-child:hover,
 input:last-child:focus {
     background: rgba(255,255,255,0.3);
+}
+
+/* top */
+.top {
+    width: 35px;
+    height: 35px;
+    background: #482a18;
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    position: absolute;
+    bottom: 90px;
+    right: 180px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.top:hover,
+.top:focus {
+    filter: brightness(1.5);
 }
 
 /* footer */

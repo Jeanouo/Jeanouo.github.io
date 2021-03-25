@@ -1,17 +1,17 @@
-$('.top').hide();
+// $('.top').hide();
 $(window).scroll(function(){
 
-    if($(this).scrollTop() > 400) {
-        $('.top').fadeIn();
-    } else if($(this).scrollTop() < 100) {
-    } else {
-        $('.top').fadeOut();
-    }
+    // if($(this).scrollTop() > 400) {
+    //     $('.top').fadeIn();
+    // } else if($(this).scrollTop() < 100) {
+    // } else {
+    //     $('.top').fadeOut();
+    // }
 
-    clearTimeout($.data(this, 'scrollTimer'));
-    $.data(this, 'scrollTimer', setTimeout(function() {        
-        $('.top').fadeOut();
-    }, 1500));
+    // clearTimeout($.data(this, 'scrollTimer'));
+    // $.data(this, 'scrollTimer', setTimeout(function() {        
+    //     $('.top').fadeOut();
+    // }, 1500));
 
     if($(this).scrollTop() > 100) {
         $('.about-1').css('animation', 'downToTop 0.5s linear forwards');
