@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 256px;
+            height: 100px;
+            color: rgb(255, 164, 243);
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 128px);
+        }
+        .timer p {
+            font-size: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
     <img src="img/ex/ex.jpg" alt="" style="width: 100%;">
+    <div class="timer"><p>100%</p></div>
 </body>
+<script>
+    $(document).ready(function(){
+         var num = 0;
+         var timer;
+         timer = setInterval(function(){
+            
+         });
+    });
+</script>
 </html>
