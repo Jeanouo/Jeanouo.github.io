@@ -11,7 +11,7 @@ $(window).scroll(function(){
     clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function() {        
         $('.top').fadeOut();
-    }, 2000));
+    }, 1500));
 
     if($(this).scrollTop() > 100) {
         $('.about-1').css('animation', 'downToTop 0.5s linear forwards');
