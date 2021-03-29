@@ -8,14 +8,14 @@ $('.close-icon').click(function(){
     
 });
 
-$('.pernutations-img').hide();
-$('.pernutations-img:nth-child(1)').show();
+// $('.pernutations-img').hide();
+// $('.pernutations-img:nth-child(1)').show();
 
-var pimg1 =  $('.pernutations-img:nth-child(1)');
-var pimg2 =  $('.pernutations-img:nth-child(2)');
-var pimg3 =  $('.pernutations-img:nth-child(3)');
+// var pimg1 =  $('.pernutations-img:nth-child(1)');
+// var pimg2 =  $('.pernutations-img:nth-child(2)');
+// var pimg3 =  $('.pernutations-img:nth-child(3)');
 
-var perContent = $('.permutations-content');
+// var perContent = $('.permutations-content');
 
 $('.pernutations-button').click(function(){
     // if('.pernutations-img:nth-child(1)' == true){

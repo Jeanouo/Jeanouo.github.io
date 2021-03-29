@@ -30,7 +30,7 @@ section > div {
     width: 300px;
     height: 300px;
     position: relative;
-    transition: all 0.5s cubic-bezier(.25,1.56,.57,.53);
+    transition: all 0.5s cubic-bezier(.25,1.56,.57,.53) ;
     cursor: pointer;
 }
 .ontology {

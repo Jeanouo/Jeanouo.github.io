@@ -120,65 +120,50 @@
                         <div class="permutations-name">
                             <p>區塊1</p>
                         </div>
-                        <div class="permutations-content">
-                            <div class="pernutations-img c1"><img src="img/olily/web1.png" alt=""></div>
-                            <div class="pernutations-img c2"><img src="img/olily/web1-2.png" alt=""></div>
-                            <div class="pernutations-img c3"><img src="img/olily/web1-3.png" alt=""></div>
-                        </div>
-                        <div class="pernutations-button">
-                            <button>置換</button>
+                        <div class="permutations-slick">
+                            <div class="pernutations-img"><img src="img/olily/web1.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web1-2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web1-3.png" alt=""></div>
                         </div>
                     </div>
                     <div class="permutations-detail-wrapper">
                         <div class="permutations-name">
                             <p>區塊2</p>
                         </div>
-                        <div class="permutations-content">
-                            <div class="pernutations-img c4"><img src="img/olily/web2.png" alt=""></div>
-                            <div class="pernutations-img c5"><img src="img/olily/web2-2.png" alt=""></div>
-                            <div class="pernutations-img c6"><img src="img/olily/web2-3.png" alt=""></div>
-                        </div>
-                        <div class="pernutations-button">
-                            <button>置換</button>
+                        <div class="permutations-slick">
+                            <div class="pernutations-img"><img src="img/olily/web2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web2-2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web2-3.png" alt=""></div>
                         </div>
                     </div>
                     <div class="permutations-detail-wrapper">
                         <div class="permutations-name">
                             <p>區塊3</p>
                         </div>
-                        <div class="permutations-content">
-                            <div class="pernutations-img c7"><img src="img/olily/web3.png" alt=""></div>
-                            <div class="pernutations-img c8"><img src="img/olily/web3-2.png" alt=""></div>
-                            <div class="pernutations-img c9"><img src="img/olily/web3-3.png" alt=""></div>
-                        </div>
-                        <div class="pernutations-button">
-                            <button>置換</button>
+                        <div class="permutations-slick">
+                            <div class="pernutations-img"><img src="img/olily/web3.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web3-2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web3-3.png" alt=""></div>
                         </div>
                     </div>
                     <div class="permutations-detail-wrapper">
                         <div class="permutations-name">
                             <p>區塊4</p>
                         </div>
-                        <div class="permutations-content">
-                            <div class="pernutations-img c10"><img src="img/olily/web4.png" alt=""></div>
-                            <div class="pernutations-img c11"><img src="img/olily/web4-2.png" alt=""></div>
-                            <div class="pernutations-img c12"><img src="img/olily/web4-3.png" alt=""></div>
-                        </div>
-                        <div class="pernutations-button">
-                            <button>置換</button>
+                        <div class="permutations-slick">
+                            <div class="pernutations-img"><img src="img/olily/web4.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web4-2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web4-3.png" alt=""></div>
                         </div>
                     </div>
                     <div class="permutations-detail-wrapper">
                         <div class="permutations-name">
                             <p>區塊5</p>
                         </div>
-                        <div class="permutations-content">
-                            <div class="pernutations-img c13"><img src="img/olily/web5.png" alt=""></div>
-                            <div class="pernutations-img c14"><img src="img/olily/web5-2.png" alt=""></div>
-                            <div class="pernutations-img c15"><img src="img/olily/web5-3.png" alt=""></div>
-                        </div>
-                        <div class="pernutations-button">
-                            <button>置換</button>
+                        <div class="permutations-slick">
+                            <div class="pernutations-img"><img src="img/olily/web5.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web5-2.png" alt=""></div>
+                            <div class="pernutations-img"><img src="img/olily/web5-3.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -324,7 +309,6 @@
 <script>    
     $(document).ready(function(){
         $('.works-slick').slick({
-            dots: true,
             infinite: true,
             speed: 300,
             slidesToShow: 5,
@@ -356,6 +340,17 @@
                     }
                 }
             ]
+        });
+        $('.permutations-slick').slick({
+            dots: false,
+            infinite: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            nextArrow: '<div class="pernutations-button"><button>置換</button></div>',
         });
 
     });

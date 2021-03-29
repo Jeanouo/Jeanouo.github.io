@@ -215,20 +215,15 @@ p {
 }
 .permutations-detail-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .permutations-name {
     width: 200px;
 }
-.permutations-content {
+.permutations-slick {
     width: calc(100% - 400px);
-}
-.pernutations-img {
-    width: 100%;
-    /* height: 150px; */
-    height: auto;
-    /* border: 1px solid #333; */
+    position: relative;
 }
 .pernutations-img img {
    width: 100%; 
@@ -236,6 +231,9 @@ p {
 }
 .pernutations-button {
     width: 200px;
+    position: absolute;
+    top: calc(50% - 23.5px);
+    right: -200px;
 }
 .pernutations-button button {
     color: #ccc;
@@ -250,24 +248,6 @@ p {
     filter: brightness(1.2);
     outline: none;
 }
-
-/* 暫時 */
-/* .c1{background: #a3bded;}
-.c2{background: #fae06f;}
-.c3{background: #a8c5ae;}
-.c4{background: #6991c7;}
-.c5{background: #e2b053;}
-.c6{background: #567e6d;}
-.c7{background: #5377bb;}
-.c8{background: #ca932c;}
-.c9{background: #4d9b61;}
-.c10{background: #5c8fd3;}
-.c11{background: #ffd23f;}
-.c12{background: #3c7441;}
-.c13{background: #425d8d;}
-.c14{background: #f7713c;}
-.c15{background: #52aa37;} */
-/* 暫時 */
 
 /* works */
 .works {
@@ -624,11 +604,12 @@ footer p {
     .permutations-name {
         width: 100px;
     }
-    .permutations-content {
+    .permutations-slick {
         width: calc(100% - 200px);
     }
     .pernutations-button {
         width: 100px;
+        right: -100px;
     }
     .pernutations-button button {
         font-size: 16px;
@@ -712,17 +693,19 @@ footer p {
     }
 
     /* permutations */
-    .permutations-detail-wrapper {
-        justify-content: space-between;
-    }
     .permutations-name {
         width: 60px;
     }
-    .permutations-content {
+    .permutations-slick {
         width: calc(100% - 160px);
     }
     .pernutations-button {
         width: 80px;
+        right: -80px;
+    }
+    .pernutations-button button {
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
     /* price */
@@ -773,15 +756,17 @@ footer p {
     /* permutations */
     .permutations-detail {
         margin-top: 30px;
+        background: #eee;
     }
     .permutations-name {
         display: none;
     }
-    .permutations-content {
+    .permutations-slick {
         width: calc(100% - 50px);
     }
     .pernutations-button {
         width: 40px;
+        right: -40px;
     }
     .pernutations-button button {
         padding: 10px 5px;
