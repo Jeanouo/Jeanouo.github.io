@@ -205,6 +205,7 @@ p {
 /* permutations */
 .permutations {
     border-top: 1px solid #333;
+    background: #eee;
 }
 .permutations .content {
 }
@@ -756,7 +757,6 @@ footer p {
     /* permutations */
     .permutations-detail {
         margin-top: 30px;
-        background: #eee;
     }
     .permutations-name {
         display: none;
