@@ -230,6 +230,9 @@ p {
    width: 100%; 
    vertical-align: middle;
 }
+.slick-prev {
+    display: none;
+}
 .pernutations-button {
     width: 200px;
     position: absolute;
@@ -698,7 +701,7 @@ footer p {
         width: 60px;
     }
     .permutations-slick {
-        width: calc(100% - 160px);
+        width: calc(100% - 130px);
     }
     .pernutations-button {
         width: 80px;
@@ -766,7 +769,7 @@ footer p {
     }
     .pernutations-button {
         width: 40px;
-        right: -40px;
+        right: -50px;
     }
     .pernutations-button button {
         padding: 10px 5px;
