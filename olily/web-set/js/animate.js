@@ -9,11 +9,11 @@ $('.main-texts-5 p').addClass('leftToRight').css('animation-delay', '2s');
 // 畫面滑動時出現的內容順序
 $(window).scroll(function(){ 
     if($(this).scrollTop() >= 300) {
-        // set5-2
-        $('.about-text-5').addClass('fadeIn').css('animation-delay', '0.5s');
-        $('.about-text-5 h2').addClass('downToTop').css('animation-delay', '1s');
-        $('.about-text-5 p').addClass('downToTop').css('animation-delay', '1.5s');
-        $('.about-img-5 img').addClass('leftToRight').css('animation-delay', '2s');
+        // set5-2 about
+        $('.about-img-5 img').addClass('leftToRight').css('animation-delay', '0.5s');
+        $('.about-text-5').addClass('fadeIn').css('animation-delay', '1s');
+        $('.about-text-5 h2').addClass('downToTop').css('animation-delay', '1.5s');
+        $('.about-text-5 p').addClass('downToTop').css('animation-delay', '2s');
         setTimeout(function(){
             $('.about-img-5 img').removeClass('opt').css('animation-delay', '0');
         }, 3000);
@@ -21,12 +21,14 @@ $(window).scroll(function(){
 
     
     if($(this).scrollTop() >= 1200) {
+        // set5-2 video
         $('.set5-3 h2').addClass('downToTop').css('animation-delay', '0.5s');      
         $('.set5-3 video').addClass('downToTop').css('animation-delay', '1s');      
         $('.play-btn').addClass('fadeIn').css('animation-delay', '1.5s');      
     };
 
     if($(this).scrollTop() > 1900) {
+        // set5-2 services
         $('.set5-4').addClass('downToTop').css('animation-delay', '0.5s');      
         $('.set5-4 h2').addClass('leftToRight').css('animation-delay', '1s');      
         $('.set5-4 h2~p').addClass('leftToRight').css('animation-delay', '1.5s');      
@@ -38,9 +40,11 @@ $(window).scroll(function(){
         $('.wrapper-3e:nth-of-type(6)').addClass('fadeIn').css('animation-delay', '4s');      
     };
 
-    if($(this).scrollTop() >= 2600) {            
+    if($(this).scrollTop() >= 2600) { 
+        // set5-2 content
         $('.set5-5').addClass('fadeIn').css('animation-duration', '1.5s');        
         $('.set5-5 h2').addClass('downToTop').css('animation-delay', '2s');           
+        $('.top').addClass('fadeIn').css('animation-delay', '2.5s');     
         $('.set5-5 p').addClass('downToTop').css('animation-delay', '2.5s');        
         $('.formbox input:nth-of-type(1)').addClass('fadeIn').css('animation-delay', '3s');      
         $('.formbox input:nth-of-type(2)').addClass('fadeIn').css('animation-delay', '3.5s');      
@@ -78,14 +82,32 @@ $(video).click(function(){
 });
 
 
-$('.menu').click(function(){
-    $('ul').css('display','flex').animate({height: '100%'}, 500);
-    $(this).css('display','none');
-    $('.close').css('display','block');
-});
 
-$('.close').click(function(){
-    $('ul').animate({height: '0'}, 500);
-    $(this).css('display','none');
-    $('.menu').css('display','block');
-});
+resizemenu();
+window.addEventListener('resize', resizemenu);
+
+function resizemenu(){
+    var windowsize = $(window).width();
+    // var screensize = $(document ).width();
+    if( windowsize <= 720){
+        $('.menu').css('display','block');
+        $('ul').css({'display':'none','height':'0'});        
+        $('.about-img-5 img').css('animation', 'unset');   
+        
+        
+        $('.menu').click(function(){
+            $('ul').css('display','flex').animate({height: '100%'}, 500);
+            $(this).css('display','none');
+            $('.close').css('display','block');
+        });
+
+        $('.close, .menu-btn').click(function(){
+            $('ul').animate({height: '0'}, 500);
+            $('.close').css('display','none');
+            $('.menu').css('display','block');
+        });
+    } else {
+        $('.close, .menu').css('display','none');
+        $('ul').css({'display':'flex','height':'auto'});    
+    } 
+}
