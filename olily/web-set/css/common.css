@@ -10,6 +10,8 @@
     src: url('../font/JF-JINXUAN-FRESH2.1-MEDIUM.OTF');
 } */
 * {transition: all 0.3s;}
+*:not(.slick-track),*:not(.slick-list){transition: unset;}
+
 html, body {
     font-family: Arial, '微軟正黑體',  Helvetica, sans-serif;
 }
@@ -347,16 +349,16 @@ video {
         display: block;
     }
     ul {
-        display: none;
+        /* display: none; */
         flex-direction: column;
         width: 100%;
-        height: 0;
+        /* height: 0; */
         background: rgba(0, 0, 0, 0.7);
         position: fixed;
         top: 75px;
         left: 0;
         overflow: hidden;
-        transition: height 0.5s;
+        /* transition: height 0.5s; */
     }
     ul .link-btn {
         display: flex;

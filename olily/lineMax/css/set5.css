@@ -1,0 +1,162 @@
+/* #set5 設置顏色 字體大小 */
+/* 設置顏色 */
+#set5 header {
+    background: #fff;
+}
+#set5 header a {
+    color: #333;
+}
+#set5 .mb5::after {
+    background: #005487;
+}
+#set5 .main-texts-5,
+#set5 .about-content-5 {
+    color: #005487;
+}
+
+
+#set5 .about-text-5 {
+    background: #005487;
+}
+#set5 .set5-3 h2 {
+    color: #005487;
+}
+#set5 .set5-4 {
+    background: #005487;
+}
+#set5 .set5-4 h2,
+#set5 .set5-4 p {
+    color: #fff;
+}
+#set5 .wrapper-3e i {
+    color: #fff;
+}
+#set5 .set5-5 h2,
+#set5 .set5-5 p {
+    color: #fff;
+}
+.submit_btn {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background: unset;
+    border: 1px solid #fff;
+}
+.type5-footer {
+    color: #005487;
+    background: #fff;
+}
+.link-btn i {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    background: #005487;
+}
+#set5 .top {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+}
+#set5 .top:hover,
+#set5 .top:focus {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#set5 .about-img-8 {    
+    color: #005487;
+}
+#set5 .about-text-8 {
+    color: #fff;
+}
+#set5 h2 {
+    color: #005487;
+}
+#set5 .about-text-8 h2 {
+    color: #fff;
+}
+
+/* 字體大小 */
+#set5 h1 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 60px;
+}
+#set5 h2 {    
+    font-size: 45px;
+    font-weight: bold;
+}
+#set5 h3 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 40px;
+}
+#set5 p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.wrapper-3e i {
+    font-size: 70px;
+}
+#set5 .type5-footer p {
+    font-size: 16px;
+}
+#set5 .top {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 720px) {   
+    /* 字體大小 */    
+    .services-icon-5 div {
+        margin-bottom: 30px;
+    }
+    .wrapper-3e i {
+        font-size: 60px;
+    }
+    #set5 .type5-footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 653px) { 
+    /* 字體大小 */
+    #set5 h1,
+    #set5 h2 {
+        font-size: 40px;
+    }
+    #set5 p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    h1~p, h2~p {
+        margin-top: 20px;
+    }    
+    .wrapper-3e i {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {  
+    /* 字體大小 */
+    #set5 h1, #set5 h2 {
+        font-size: 30px;
+    }
+    #set5 p {
+        font-size: 16px;
+        line-height: 20px;
+    }    
+    .wrapper-3e i {
+        font-size: 40px;
+    }    
+    #set5 .top {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    #set5 h1, #set5 h2 {
+        font-size: 25px;
+    }
+    #set5 p {
+        font-size: 14px;
+    }
+}
+/* -------只留顏色 字體 大小----------- */

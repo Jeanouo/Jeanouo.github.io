@@ -83,31 +83,66 @@ $(video).click(function(){
 
 
 
+// resizemenu();
+// window.addEventListener('resize', resizemenu);
+
+// function resizemenu(){
+//     var windowsize = $(window).width();
+//     // var screensize = $(document).width();
+//     if( windowsize <= 720){
+//         $('.menu').show();
+//         // $('ul').css({'display':'none','height':'0'});        
+//         $('ul').slideUp('slow');
+//         $('.about-img-5 img').css('animation', 'unset');        
+//     } else {
+//         $('.close, .menu').hide();
+//         // $('ul').css({'display':'flex','height':'auto'});  
+//         // $('ul').fadeIn();        
+
+//     } 
+// }
 resizemenu();
 window.addEventListener('resize', resizemenu);
 
 function resizemenu(){
-    var windowsize = $(window).width();
-    // var screensize = $(document ).width();
+    var windowsize = $(window || document).width();
     if( windowsize <= 720){
-        $('.menu').css('display','block');
-        $('ul').css({'display':'none','height':'0'});        
+        $('.menu').show();   
+        $('.close').hide();      
+        $('ul').hide();
         $('.about-img-5 img').css('animation', 'unset');   
-        
-        
-        $('.menu').click(function(){
-            $('ul').css('display','flex').animate({height: '100%'}, 500);
-            $(this).css('display','none');
-            $('.close').css('display','block');
-        });
 
-        $('.close, .menu-btn').click(function(){
-            $('ul').animate({height: '0'}, 500);
-            $('.close').css('display','none');
-            $('.menu').css('display','block');
-        });
-    } else {
-        $('.close, .menu').css('display','none');
-        $('ul').css({'display':'flex','height':'auto'});    
+        // $('.menu-btn').click(function(){
+        //     $('ul').slideUp('slow');
+        //     $('.close').hide();
+        //     $('.menu').show();
+        // });     
     } 
-}
+    if( windowsize > 720) {
+        $('.close, .menu').hide();
+        $('ul').show();
+        
+        // $('.menu-btn').click(function(){
+        //     console.log('點擊');
+        //     $('ul').show();
+        //     $('.close').hide();
+        //     // $('.close, .menu').hide();
+        //     $('.menu').show();
+        // });     
+    }
+} 
+
+
+$('.menu').click(function(){
+    $('ul').slideDown('slow');
+    $(this).hide();
+    $('.close').show();
+});
+
+$('.close').click(function(){
+    $('ul').slideUp('slow');
+    $('.close').hide();
+    $('.menu').show();
+});
+
+
