@@ -13,6 +13,7 @@ include("class.phpmailer.php");
     $C_exhibitionName=$_POST['C_exhibitionName'];
     $C_date=$_POST['C_date'];
     $C_area=$_POST['C_area'];
+    $C_file=$_POST['C_file'];
     // $date=date('Y/m/d H:i:s');
 
 // 產生 Mailer 實體
@@ -55,7 +56,7 @@ $mail->Body    =
                     展覽日期:'.$_POST['C_date'].'<p>
                     攤位面積:&emsp;'.$_POST['C_area'].'<p>
                 </div>';
-$mail->AddAttachment("path_to/file"); // 附件
+$mail->AddAttachment($_POST["C_file"]); // 附件
 
 $mail->IsHTML(true);
 
