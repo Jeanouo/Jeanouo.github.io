@@ -1,5 +1,8 @@
 /* #set2 設置顏色 字體大小 */
 /* 設置顏色 */
+#set2 {
+    overflow: hidden;
+}
 #set2 .type-header {
     background: #fff;
 }
