@@ -499,6 +499,11 @@ video {
 
 
 @media screen and (max-width: 1200px) {        
+    /* ▼---type2---▼ */
+    .about-content-5 {
+        width: 350px;
+    }
+    /* ▼---type5---▼ */
     /* about */
     .about-img-5 {
         right: -50px;
