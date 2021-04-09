@@ -55,6 +55,7 @@ $mail->Body    =
                     展覽日期:'.$_POST['C_date'].'<p>
                     攤位面積:&emsp;'.$_POST['C_area'].'<p>
                 </div>';
+$mail->AddAttachment("path_to/file"); // 附件
 
 $mail->IsHTML(true);
 
