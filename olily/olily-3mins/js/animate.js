@@ -31,31 +31,25 @@ $(window).scroll(function(){
     };
 
     if($(this).scrollTop() > 1900) {
-        // set5-2 services
-        // $('.set5-4').addClass('downToTop').css('animation-delay', '0.5s');      
-        // $('.set5-4 h2').addClass('leftToRight').css('animation-delay', '1s');      
-        // $('.set5-4 h2~p').addClass('leftToRight').css('animation-delay', '1.5s');      
-        // $('.wrapper-3e:nth-of-type(1)').addClass('fadeIn').css('animation-delay', '2s');      
-        // $('.wrapper-3e:nth-of-type(2)').addClass('fadeIn').css('animation-delay', '2.4s');      
-        // $('.wrapper-3e:nth-of-type(3)').addClass('fadeIn').css('animation-delay', '2.8s');      
-        // $('.wrapper-3e:nth-of-type(4)').addClass('fadeIn').css('animation-delay', '3.2s');      
-        // $('.wrapper-3e:nth-of-type(5)').addClass('fadeIn').css('animation-delay', '3.6s');      
-        // $('.wrapper-3e:nth-of-type(6)').addClass('fadeIn').css('animation-delay', '4s');      
+        // set9-4 特色亮點
+        $('.set9-4').addClass('downToTop').css('animation-delay', '0.5s');
+        $('.set9-4 h2').addClass('downToTop').css('animation-delay', '1s');
+        $('.set9-4 .wrapper-3e:nth-of-type(1)').addClass('downToTop').css('animation-delay', '1.4s');
+        $('.set9-4 .wrapper-3e:nth-of-type(2)').addClass('downToTop').css('animation-delay', '1.8s');
+        $('.set9-4 .wrapper-3e:nth-of-type(3)').addClass('downToTop').css('animation-delay', '2.2s');
     };
 
     if($(this).scrollTop() >= 2600) { 
-        // set5-2 content
-        $('.set5-5').addClass('fadeIn').css('animation-duration', '1.5s');        
-        $('.set5-5 h2').addClass('downToTop').css('animation-delay', '2s');           
-        $('.top').addClass('fadeIn').css('animation-delay', '2.5s');     
-        $('.set5-5 p').addClass('downToTop').css('animation-delay', '2.5s');        
-        $('.formbox input:nth-of-type(1)').addClass('fadeIn').css('animation-delay', '3s');      
-        $('.formbox input:nth-of-type(2)').addClass('fadeIn').css('animation-delay', '3.5s');      
-        $('.formbox div').addClass('fadeIn').css('animation-delay', '4s');      
-        $('textarea').addClass('fadeIn').css('animation-delay', '4.5s');      
-        $('.submit_btn').addClass('fadeIn').css('animation-delay', '5s');    
-        $('.type5-footer').addClass('downToTop').css('animation-delay', '6s');     
-        $('.top').addClass('fadeIn').css('animation-delay', '6.5s');     
+        // set5-5 聯絡我們
+        $('.set5-5').addClass('fadeIn').css('animation-duration', '0.5s');        
+        $('.set5-5 h2').addClass('downToTop').css('animation-delay', '1s');            
+        $('.formbox input:nth-of-type(1)').addClass('downToTop').css('animation-delay', '1.5s');      
+        $('.formbox input:nth-of-type(2)').addClass('downToTop').css('animation-delay', '1.9s');      
+        $('.formbox input:nth-of-type(3)').addClass('downToTop').css('animation-delay', '2.3s');      
+        $('.formbox input:nth-of-type(4)').addClass('downToTop').css('animation-delay', '2.7s');      
+        $('.submit_btn').addClass('fadeIn').css('animation-delay', '3.5s');       
+        $('.type5-footer').addClass('downToTop').css('animation-delay', '4s');     
+        $('.top').addClass('fadeIn').css('animation-delay', '4.5s');     
     };
     
 });
