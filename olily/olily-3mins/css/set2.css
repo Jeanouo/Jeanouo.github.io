@@ -96,8 +96,9 @@
     font-size: 70px;
 }
 #set2 h1 {
-    font-size: 67px;
+    font-size: 90px;
     font-weight: 900;
+    line-height: 100px;
 }
 #set2 h2 {    
     font-size: 45px;
@@ -110,6 +111,9 @@
 #set2 p {
     font-size: 18px;
     line-height: 30px;
+}
+#set2 .mainView-text p {
+    font-size: 27px;
 }
 .set2-4 .wrapper-3e i {
     font-size: 30px;
@@ -124,4 +128,14 @@
 }
 #set5 .top {
     font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    #set2 h1 {
+        font-size: 67px;
+        line-height: 70px;
+    }
+    #set2 .mainView-text p {
+        font-size: unset;
+    }
 }

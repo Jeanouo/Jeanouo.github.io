@@ -139,7 +139,7 @@ footer p {
 #set2 h1~p {
     font-weight: bold;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 #set2 h1~p::after {
     content: "";
@@ -233,10 +233,11 @@ footer p {
     max-width: 800px;
 }
 .set2-4 .product-video-wrapper .close {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     position: absolute;
     top: 30px;
+    /* right: calc(100% / 2 - 400px - 40px - 30px); */
     right: 30px;
 }
 
@@ -330,14 +331,14 @@ footer p {
 
 /* about */
 .set5-2 {
-    padding: 180px 0;
+    padding: 180px 0 0 0;
 }
 .about-img-5 {
     width: 50%;
     max-width: 800px;
     position: relative;
     right: -120px;
-    bottom: 80px;
+    bottom: 150px;
     z-index: 1;
 }
 .about-text-5 {
@@ -489,8 +490,8 @@ video {
         padding: 180px 0 100px 0;
     }
     .about-img-5 {
-        right: -80px;
-        bottom: 70px;
+        right: -70px;
+        bottom: 0;
     }
     .about-text-5 {
         padding: 80px 0 100px 0;
@@ -500,15 +501,25 @@ video {
 
 @media screen and (max-width: 1200px) {        
     /* ▼---type2---▼ */
+    
+    #set2 h1~p {
+        margin-top: 20px;
+    }
+    #set2 p {
+        line-height: auto;
+    }
     .about-content-5 {
         width: 350px;
     }
+    .product-imgs-2 p {
+        padding: 0 30px;
+    }
     /* ▼---type5---▼ */
     /* about */
-    .about-img-5 {
+    /* .about-img-5 {
         right: -50px;
         bottom: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {        
@@ -517,6 +528,9 @@ video {
         padding: 150px 0 100px 0;
     }
     .about-img-5 {
+        right: -30px;
+    }
+    /* .about-img-5 {
         right: 0;
         bottom: 0;
         overflow: hidden;
@@ -528,9 +542,17 @@ video {
     .about-img-5 img:hover {
         animation: imgLeftToRight 15s linear infinite;
         animation-delay: 0s !important;
-    }
+    } */
     .about-text-5 {
         padding: 80px 30px 100px 30px;
+    }
+    .set2-4 .play-btn {
+        width: 50px;
+        height: 50px;
+    }
+    .play-btn {
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
     }
 }
 

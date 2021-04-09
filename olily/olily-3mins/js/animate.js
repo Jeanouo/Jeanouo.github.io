@@ -146,11 +146,13 @@ $('.set2-4 .wrapper-3e').click(function(){
     $(this).next().css('display','flex').addClass('fadeIn');
     $('.type-header').css('z-index','0');
     $('.about-img-5').css('z-index','0');
+    $('.set9-4, .set5-5, .type5-footer').css({'z-index':'-1','position':'relative'});
 });
 
 $('.set2-4 .product-video-wrapper .close').click(function(){
     $(this).parent().css('display','none').addClass('opt');
     $('.type-header').css('z-index','2');
     $('.about-img-5').css('z-index','1');
+    $('.set9-4, .set5-5, .type5-footer').css({'z-index':'0','position':'unset'});
 });
 

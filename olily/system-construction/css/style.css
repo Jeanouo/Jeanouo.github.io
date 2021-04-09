@@ -274,6 +274,7 @@ input[type="checkbox"] {
     left: 0;
 }
 .si-text {
+    max-width: calc(90% - 50px);
     text-align: center;
 }
 .si-text ul {
