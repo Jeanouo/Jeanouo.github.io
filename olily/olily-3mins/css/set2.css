@@ -1,7 +1,7 @@
 /* #set2 設置顏色 字體大小 */
 /* 設置顏色 */
 #set2 {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #set2 .type-header {
     background: #fff;
@@ -41,6 +41,7 @@
 }
 #set2 .about-text-5 {
     background: #e70012 url('../imgs/img-bg-1.png') top left no-repeat;
+    background-size: cover;
 }
 #set2 .set2-4 p a {
     color: #333;
