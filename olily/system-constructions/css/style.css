@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+
+/*==【基本設定】==*/
+body,html{
+    font-family: 'Microsoft JhengHei', '微軟正黑體', Arial,'Noto Sans TC',sans-serif;
+    font-size: 20px;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling: touch;
+	color: #333333;
+    line-height: 1.5;
+}
+body{
+	overflow:hidden;
+    -webkit-overflow-scrolling: touch;
+}
+*{
+	box-sizing:border-box;
+    position: relative;
+}
+a{
+	text-decoration: none;
+	color: #c8161d;
+}
+a:hover{
+	text-decoration: none;
+}
+/* .style_shadow{
+    -webkit-box-shadow: 0px 3px 5px rgb(0 0 0 / 0.1);
+    -moz-box-shadow: 0px 3px 5px rgb(0 0 0 / 0.1);
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 0.1);
+} */
+.fz_xl{font-size: 100px;}
+.fz_l{font-size: 70px;}
+.fz_m{font-size: 40px;}
+.fz_s{font-size: 30px;}
+.fz_s2{font-size: 25px;}
+.fz_xs{font-size: 20px;}
+.fz_xs2{font-size: 15px;}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+}
+.w1000{width: 1000px;margin: 0 auto;}
+.between{display: flex;justify-content: space-between;align-items: flex-start;padding: 60px 0;border-bottom: 1px solid #601986;}
+.left-space{width: 210px;}
+.right-space{width: calc(100% - 210px);}
+
+
+/* header */
+header{
+	display: block;
+	width: 100%;
+    height: 80px;
+	text-align: center;
+	background-color: #c8161d;
+    padding: 10px 0;
+	/* position: fixed;
+	top: 0;
+    left: 0; */
+    z-index: 10;
+    transition: all .5s;
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header a {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+}
+header a img {
+    width: 100%;
+}
+header h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+/* .top_tag{
+    text-align: center;
+}
+.top_tag span{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 25px 15px;
+    margin: 10px;
+    background-color: #00b0e8;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 6px 8px rgb(0 0 0 / 0.6);
+    -moz-box-shadow: 0px 6px 8px rgb(0 0 0 / 0.6);
+    box-shadow: 0px 6px 8px rgb(0 0 0 / 0.6);
+} */
+
+/* main */
+.left-space img {
+    width: 150px;
+}
+.first-icon {
+    position: relative;
+}
+.first-icon img:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.icon {
+}
+.icon img {
+    width: 120px;
+}
+.icon p {
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+.form-content label {
+    display: block;
+    width: 100%;
+    height: 67px;
+    margin-bottom: 20px;
+}
+.form-content label input {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(155,155,155,0.1);
+    border-radius: 5px;
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+.form-content label.tel {
+    display: flex;
+    border: 3px solid rgba(155,155,155,0.1);
+    border-radius: 5px;
+}
+.form-content label input:hover,
+.form-content label input:focus,
+.form-content label.tel:hover {
+    border: 3px solid rgba(155,155,155,0.5);
+}
+.form-content label.tel input:first-child {
+    width: 70%;
+    border: none;
+}
+.form-content label.tel input:last-child {
+    width: 30%;
+    border: none;
+}
+.form-content input::placeholder {
+    color:rgba(155,155,155,0.5);
+}
+.form-content input:hover::placeholder,
+.form-content input:focus::placeholder {
+    color:rgb(155,155,155);
+}
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+::-webkit-calendar-picker-indicator,
+::-webkit-datetime-edit {
+    filter: invert(0.8);
+}
+.note p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.note p::before {
+    content: '●';
+    font-size: 12px;
+    color: #c8161d;
+    margin: 0 5px;
+}
+.upload-btn {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 80px 0 40px 0;
+    position: relative;
+}
+.upload-btn input {
+    opacity: 0;
+}
+.upload-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 60px;
+    color: #e60012;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px solid #e60012;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.check-box {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.explanation p {
+    font-weight: bold;
+}
+.exNsubmit {
+    display: flex;
+    justify-content: flex-start;
+}
+.submit_btn {
+    width: 230px;
+    height: 80px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: #e60012;
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+.submit_btn img {
+    width: 40px;
+    height: 40px;
+}
+.service-items {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,1);
+}
+.si-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 50px;
+    margin: 10px;
+    position: relative;
+}
+.si-img1 {background-image: url('../images/1.jpg');}
+.si-img2 {background-image: url('../images/2.jpg');}
+.si-img3 {background-image: url('../images/3.jpg');}
+.si-img4 {background-image: url('../images/4.jpg');}
+.si-img5 {background-image: url('../images/5.jpg');}
+.si-wrapper::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.si-text {
+    max-width: calc(90% - 50px);
+    text-align: center;
+}
+.si-text ul {
+    list-style: disc;
+    text-align: left;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+    background: #c8161d;
+    margin-top: 70px;
+}
+/* 固定物件 */
+.gotop a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    background: #c8161d;
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    border-radius: 50%;
+}
