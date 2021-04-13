@@ -304,3 +304,45 @@ footer {
     right: 70px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1200px) {
+    .w1000 {
+        width: 700px;
+    }
+    .icon img {
+        width: 120px;
+    }
+
+
+    .fz_l {
+        font-size: 50px;
+    }
+    .fz_s {
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+    .left-space {
+        width: 150px;
+    }
+    .right-space {
+        width: calc(100% - 150px);
+    }
+    .left-space img {
+        width: 120px;
+    }
+    .form-content label {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .form-content label input,
+    .form-content label input:hover, .form-content label input:focus, .form-content label.tel:hover {
+        border-width: 2px;
+    }
+    .exNsubmit {
+        flex-direction: column;
+    }
+
+}

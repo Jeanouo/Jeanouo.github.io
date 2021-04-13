@@ -139,3 +139,9 @@
         font-size: unset;
     }
 }
+
+/* @media screen and (max-width: 720px) {
+    a.menu {
+        color: #333;
+    }
+} */
